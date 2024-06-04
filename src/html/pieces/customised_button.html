@@ -1,0 +1,13 @@
+@@if (type === "button") {
+<button class="customised-button" style="background: @@bgcolor; border-color: @@borderColor; @@additional">
+}
+@@if (type === "hyperlink") {
+<a class="customised-button" href="@@path" style="background: @@bgcolor; border-color: @@borderColor; @@additional">
+}
+    <text style="color: @@textColor;">@@text</text>
+@@if (type === "button") {
+</button>
+}
+@@if (type === "hyperlink") {
+</a>
+}

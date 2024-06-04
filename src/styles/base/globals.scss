@@ -1,0 +1,80 @@
+* {
+  font-family: 'Lexend';
+  color: #46494F;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.block-normalizer {
+  max-width: 1220px;
+  width: 100%;
+  align-self: center;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.simple-button {
+  border: none;
+  background-color: #ffffff00;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.white {
+  color: white;
+}
+
+.h1-text,
+.h2-text {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.h3-text {
+  font-size: 24px;
+  font-weight: 500;
+ }
+
+
+
+@include media-down($bp2) {
+
+  .h1-text,
+  .h2-text {
+    font-size: 32px;
+  }
+
+  .h3-text {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+@include media-down($bp3) {
+
+  .h1-text,
+  .h2-text {
+    font-size: 32px;
+  }
+
+  .h3-text {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+  .block-normalizer {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

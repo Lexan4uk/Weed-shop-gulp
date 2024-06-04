@@ -1,0 +1,34 @@
+.promo {
+    &__limiter{
+        display: flex;
+        justify-content: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    &__text {
+        font-size: 14px !important;
+    }
+    &__text-color {
+        color: #FFFFFFB2;
+    }
+    &__time-color {
+        color: #ffffff;
+    }
+}
+.promo-bg {
+    background-color: #05422C;
+}
+@include media-down($bp2) {
+    .promo {
+        &__text {
+            font-size: 12px !important;
+        }
+    }
+}
+@include media-down($bp4) {
+    .promo {
+        &__text {
+            font-size: 10px !important;
+        }
+    }
+}

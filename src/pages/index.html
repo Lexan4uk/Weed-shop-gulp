@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('html/base/meta.html',{
+    "title": "WEEEED"
+    })
+    @@include('html/base/styles.html')
+</head>
+
+<body>
+    @@include('html/pieces/promo.html')
+    @@include('html/header.html')
+
+    <main class="main">
+        <section class="main__bg">
+            <div class="main__welcome-block block-normalizer">
+                <div class="main__text-holder">
+                    <div class="main__top-text main__separation">
+                        <span class="main__yellow-text text">BEST SELLER</span>
+                        <span class="main__big-text h1-text white">BEST DISPENSARY TO<br> BUY WEED ONLINE</span>
+                        <span class="text white">Vitamins & Supplements</span>
+                    </div>
+                    <div class="main__bottom-text">
+                        <div class="main__promo-text main__promo-text-margin">
+                            <h2 class="main__promo-text_h2-border text white">Get 25% off</h2>
+                            <h2 class="text white">Free Shipping</h2>
+                        </div>
+                        @@include('html/pieces/customised_button.html', {
+                            "type": "hyperlink",
+                            "path": "/",
+                            "bgcolor": "#17AF26",
+                            "borderColor": "#17AF26",
+                            "textColor": "#FFFFFF",
+                            "text": "Shop All",
+                            "additional" : "padding: 18px 56px 18px 56px; border-radius: 100px; font-size: 18px; font-weight: 500;"
+                        })
+                    </div>
+                </div>
+                <div class="main__images-holder">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html')
+    @@include('html/base/scripts.html')
+
+</html>

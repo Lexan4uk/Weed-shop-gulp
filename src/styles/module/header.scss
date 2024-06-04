@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lexend';
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 10px;
+  }
+  &__logo-holder {
+    display: flex;
+    gap: 12px;
+  }
+  &__logo_img {
+    height: 100%;
+    width: 100%;
+  }
+  &__mobmenu {
+    display: none;
+  }
+  &__bottom {
+    border-top: 1px solid #F4F4F4;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__search {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 1px solid #F4F4F4;
+    border-radius: 100px;
+    padding: 12px 24px;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      color: #C8C9CB;
+
+    }
+  }
+
+  &__user-account {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .bag-block {
+    border-left: 1px solid #F4F4F4;
+    padding-left: 24px;
+    position: relative;
+
+    &_counter {
+      position: absolute;
+      background-color: #EB2606;
+      font-size: 10px;
+      color: white;
+      border-radius: 100px;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      transform: translate(70%, 70%);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+@include media-down($bp1) {
+  .header {
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+}
+@include media-down($bp3) {
+  .header {
+    &__top {
+      display: grid;
+    }
+    &__logo-holder {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    &__user-account {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    &__search {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+    }
+    &__logo {
+      width: 119px;
+      height: 28px;
+    }
+    &__mobmenu {
+      display: block;
+    }
+    &__bottom {
+      display: none;
+    }
+    &__search  {
+      max-width: none;
+      padding-top: 14px;
+      margin-top: 14px;
+      border-top: 1px solid #F4F4F4;
+    }
+    &__user-account {
+      gap: 10px;
+    }
+  
+    .bag-block {
+      padding-left: 10px;
+    }
+  }
+}

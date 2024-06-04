@@ -1,0 +1,46 @@
+.main {
+  &__bg {
+    background: conic-gradient(from 180deg at 50% 50%, rgba(5, 66, 44, 0) -4.67deg, #05422C 299.08deg, rgba(5, 66, 44, 0) 355.33deg, #05422C 659.08deg);
+  }
+  &__welcome-block {
+    max-height: 720px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  &__text-holder {
+    max-width: 692px;
+  }
+  &__top-text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__separation {
+    margin-bottom: 102px;
+  }
+  &__yellow-text {
+    color: #F2BC1B;
+    line-height: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+  }
+  &__big-text {
+    margin-bottom: 24px;
+    letter-spacing: -4px;
+  }
+  &__bottom-text {
+
+  }
+  &__promo-text {
+    display: flex;
+  }
+  &__promo-text-margin {
+    margin-bottom: 40px;
+  }
+  &__promo-text_h2-border {
+    border-right: 2px solid #F4F4F4;
+    margin-right: 32px;
+    padding-right: 32px;
+  }
+  &__images-holder {
+  }
+}
