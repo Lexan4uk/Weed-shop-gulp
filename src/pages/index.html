@@ -13,32 +13,68 @@
     @@include('html/header.html')
 
     <main class="main">
-        <section class="main__bg">
-            <div class="main__welcome-block block-normalizer">
-                <div class="main__text-holder">
-                    <div class="main__top-text main__separation">
-                        <span class="main__yellow-text text">BEST SELLER</span>
-                        <span class="main__big-text h1-text white">BEST DISPENSARY TO<br> BUY WEED ONLINE</span>
-                        <span class="text white">Vitamins & Supplements</span>
+        <section class="welcome-block welcome-block_bg welcome-block_bg-props">
+            <div class="welcome-block__main welcome-block_block-normalizer block-normalizer">
+                <div class="welcome-block__text-holder">
+                    <div class="welcome-block__top-text welcome-block__separation">
+                        <span class="welcome-block__yellow-text text">BEST SELLER</span>
+                        <h2 class="welcome-block__big-text h2-text white">BEST DISPENSARY TO<br> BUY WEED ONLINE</h2>
+                        <span class="white">Vitamins & Supplements</span>
                     </div>
-                    <div class="main__bottom-text">
-                        <div class="main__promo-text main__promo-text-margin">
-                            <h2 class="main__promo-text_h2-border text white">Get 25% off</h2>
-                            <h2 class="text white">Free Shipping</h2>
+                    <div class="welcome-block__bottom-text">
+                        <div class="welcome-block__promo-text welcome-block__promo-text-margin">
+                            <h3 class="welcome-block__promo-text_h3-border white">Get 25% off</h3>
+                            <h3 class="white">Free Shipping</h3>
                         </div>
                         @@include('html/pieces/customised_button.html', {
                             "type": "hyperlink",
+                            "template": "button-green",
+                            "font": "button__text-18px",
+                            "padding": "18.5px 56px",
+                            "additional": "",
                             "path": "/",
-                            "bgcolor": "#17AF26",
-                            "borderColor": "#17AF26",
-                            "textColor": "#FFFFFF",
-                            "text": "Shop All",
-                            "additional" : "padding: 18px 56px 18px 56px; border-radius: 100px; font-size: 18px; font-weight: 500;"
+                            "text": "Shop All"
                         })
                     </div>
                 </div>
-                <div class="main__images-holder">
-
+            </div>
+            <div class="welcome-block__images-holder">
+                <div class="welcome-block__cube welcome-block__left-cube">
+                    <img class="welcome-block__cube-img welcome-block__left-cube_img" src="/images/main/weed-left.png" alt="Наркота">
+                    <img src="/images/main/cube-left.svg" alt="Кубик">
+                </div>
+                <div class="welcome-block__cube welcome-block__center-cube">
+                    <img class="welcome-block__cube-img welcome-block__center-cube_img" src="/images/main/weed-center.png" alt="Наркота">
+                    <img src="/images/main/cube-center.svg" alt="Кубик">
+                </div>
+                <div class="welcome-block__cube welcome-block__right-cube">
+                    <img class="welcome-block__cube-img welcome-block__right-cube_img" src="/images/main/weed-right.png" alt="Наркота">
+                    <img src="/images/main/cube-right.svg" alt="Кубик">
+                </div>
+            </div>
+        </section>
+        <section class="advantages-block advantages-block_bg">
+            <div class="advantages-block__main advantages-block_block-normalizer block-normalizer">
+                <div class="advantages-block__content-block">
+                    <img class="advantages-block__img" src="/images/main/truck-fast.svg" alt="Картинка грузовика">
+                    <div class="advantages-block__textblock">
+                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">Reliable Shipping</h3>
+                        <span class="advantages-block__gray-text">Green Society provides Canada Post Xpress Shipping right to your doorstep! You can also opt in for shipping insurance. For orders over $149, shipping is free!</span>
+                    </div>
+                </div>
+                <div class="advantages-block__content-block">
+                    <img class="advantages-block__img" src="/images/main/safe-home.svg" alt="Картинка марихуаны">
+                    <div class="advantages-block__textblock">
+                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">You’re Safe With Us</h3>
+                        <span class="advantages-block__gray-text">Our secure payment system accepts the most common forms of payments making the checkout process quicker! The payments we accept are debit, all major credit cards, and cryptocurrency.</span>
+                    </div>
+                </div>
+                <div class="advantages-block__content-block">
+                    <img class="advantages-block__img" src="/images/main/coin.svg" alt="Картинка монеты">
+                    <div class="advantages-block__textblock">
+                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">Best Quality & Pricing</h3>
+                        <span class="advantages-block__gray-text">Here at Green Society, we take pride in the quality of our products and service. Our prices are set to ensure you receive your medication at a reasonable price and safely</span>
+                    </div>
                 </div>
             </div>
         </section>

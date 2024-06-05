@@ -1,10 +1,10 @@
 @@if (type === "button") {
-<button class="customised-button" style="background: @@bgcolor; border-color: @@borderColor; @@additional">
+<button class="@@template @@font button" style="padding: @@padding; @@additional">
 }
 @@if (type === "hyperlink") {
-<a class="customised-button" href="@@path" style="background: @@bgcolor; border-color: @@borderColor; @@additional">
+<a class="@@template @@font button" href="@@path" style="padding: @@padding; @@additional ">
 }
-    <text style="color: @@textColor;">@@text</text>
+    @@text
 @@if (type === "button") {
 </button>
 }

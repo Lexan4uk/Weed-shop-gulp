@@ -82,16 +82,20 @@
     align-items: center;
     gap: 40px;
     justify-content: center;
+    &__arrow {
+      margin-left: 6px;
+      margin-bottom: 2px;
+    }
   }
 }
 
 @include media-down($bp1) {
   .header {
     .navigation {
-      display: flex;
-      align-items: center;
       gap: 10px;
-      justify-content: center;
+      &__arrow {
+        display: none;
+      }
     }
   }
 }

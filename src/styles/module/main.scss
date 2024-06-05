@@ -1,46 +1,222 @@
 .main {
-  &__bg {
-    background: conic-gradient(from 180deg at 50% 50%, rgba(5, 66, 44, 0) -4.67deg, #05422C 299.08deg, rgba(5, 66, 44, 0) 355.33deg, #05422C 659.08deg);
-  }
-  &__welcome-block {
-    max-height: 720px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  &__text-holder {
-    max-width: 692px;
-  }
-  &__top-text {
-    display: flex;
-    flex-direction: column;
-  }
-  &__separation {
-    margin-bottom: 102px;
-  }
-  &__yellow-text {
-    color: #F2BC1B;
-    line-height: 24px;
-    letter-spacing: 4px;
-    margin-bottom: 16px;
-  }
-  &__big-text {
-    margin-bottom: 24px;
-    letter-spacing: -4px;
-  }
-  &__bottom-text {
+  .welcome-block {
+    &_bg {
+      background-color: #648A7C;
+      background-image: conic-gradient(from 180deg at 50% 50%, rgba(5, 66, 44, 0) -4.67deg, #05422C 299.08deg, rgba(5, 66, 44, 0) 355.33deg, #05422C 659.08deg);
+    }
+    &_block-normalizer {
+      max-width: 1332px;
+    }
 
+    &_bg-props {
+      position: relative;
+    }
+
+    &__main {
+      max-height: 720px;
+    }
+
+    &__text-holder {
+      max-width: 692px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    &__top-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__separation {
+      margin-bottom: 102px;
+    }
+
+    &__yellow-text {
+      color: #F2BC1B;
+      line-height: 24px;
+      letter-spacing: 4px;
+      margin-bottom: 16px;
+    }
+
+    &__big-text {
+      margin-bottom: 24px;
+      letter-spacing: -4px;
+    }
+
+    &__promo-text {
+      display: flex;
+    }
+
+    &__promo-text-margin {
+      margin-bottom: 58px;
+    }
+
+    &__promo-text_h3-border {
+      border-right: 2px solid #F4F4F4;
+      margin-right: 32px;
+      padding-right: 32px;
+    }
+
+    &__images-holder {
+      display: flex;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-bottom: -4px;
+    }
+
+    &__cube {
+      position: relative;
+    }
+
+    &__cube-img {
+      position: absolute;
+      top: 0;
+    }
+
+    &__left-cube {
+      margin-right: -68px;
+      z-index: 1;
+
+      &_img {
+        transform: translate(25%, -45%);
+      }
+    }
+
+    &__center-cube {
+      z-index: 0;
+      margin-right: -123px;
+
+      &_img {
+        transform: translate(13%, -50%);
+      }
+    }
+
+    &__right-cube {
+      z-index: 1;
+
+      &_img {
+        transform: translate(65%, -25%);
+      }
+    }
   }
-  &__promo-text {
-    display: flex;
+  .advantages-block {
+    &_bg {
+      background: #F2F6F4;
+    }
+    &_block-normalizer {
+      max-width: 1332px;
+    }
+    &__main {
+      padding-top: 80px;
+      padding-bottom: 104px;
+      display: flex;
+      gap: 32px;
+    }
+    &__content-block {
+      display: flex;
+      gap: 24px;
+    }
+    &__img {
+      padding: 22px;
+      border-radius: 100px;
+      background-color: #fff;
+    }
+    &__h3-margin {
+      margin-bottom: 16px;
+    }
+    &__black-text {
+      color: #1A1E26;
+      letter-spacing: -0.5px;
+    }
+    &__gray-text {
+      color: #717378;
+    }
   }
-  &__promo-text-margin {
-    margin-bottom: 40px;
+}
+
+@include media-down($bp1) {
+  .main {
+    .welcome-block {
+      &__images-holder {
+        transform: scale(0.7);
+        margin-bottom: -70px;
+        margin-right: -102px;
+      }
+    }
   }
-  &__promo-text_h2-border {
-    border-right: 2px solid #F4F4F4;
-    margin-right: 32px;
-    padding-right: 32px;
+}
+
+@include media-down($bp2) {
+  .main {
+    .welcome-block {
+      &__text-holder {
+        padding-top: 56px;
+        padding-bottom: 56px;
+      }
+    }
+    .advantages-block {
+      &__main {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        flex-direction: column;
+      }
+      &__img {
+        padding: 14px;
+        height: 100px;
+        width: 100px;
+      }
+      &__h3-margin {
+        margin-bottom: 12px;
+      }
+    }
   }
-  &__images-holder {
+}
+
+@include media-down($bp3) {
+  .main {
+    .welcome-block {
+      &_bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__text-holder {
+        padding-bottom: 0px;
+      }
+
+      &__yellow-text {
+        margin-bottom: 12px;
+      }
+
+      &__big-text {
+        margin-bottom: 16px;
+      }
+
+      &__separation {
+        margin-bottom: 40px;
+      }
+
+      &__promo-text-margin {
+        margin-bottom: 44px;
+      }
+
+      &__images-holder {
+        position: relative;
+        transform: scale(0.45);
+        margin-bottom: -124px;
+        margin-right: 0px;
+
+      }
+    }
   }
+}
+
+@include media-down($bp4) {
+  .main {
+    .welcome-block {}
+  }
+
 }
