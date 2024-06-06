@@ -18,13 +18,13 @@
                 <div class="welcome-block__text-holder">
                     <div class="welcome-block__top-text welcome-block__separation">
                         <span class="welcome-block__yellow-text text">BEST SELLER</span>
-                        <h2 class="welcome-block__big-text h2-text white">BEST DISPENSARY TO<br> BUY WEED ONLINE</h2>
-                        <span class="white">Vitamins & Supplements</span>
+                        <h2 class="welcome-block__big-text h2-text white-text">BEST DISPENSARY TO<br> BUY WEED ONLINE</h2>
+                        <span class="white-text">Vitamins & Supplements</span>
                     </div>
                     <div class="welcome-block__bottom-text">
                         <div class="welcome-block__promo-text welcome-block__promo-text-margin">
-                            <h3 class="welcome-block__promo-text_h3-border white">Get 25% off</h3>
-                            <h3 class="white">Free Shipping</h3>
+                            <h3 class="welcome-block__promo-text_h3-border white-text">Get 25% off</h3>
+                            <h3 class="white-text">Free Shipping</h3>
                         </div>
                         @@include('html/pieces/customised_button.html', {
                             "type": "hyperlink",
@@ -58,22 +58,162 @@
                 <div class="advantages-block__content-block">
                     <img class="advantages-block__img" src="/images/main/truck-fast.svg" alt="Картинка грузовика">
                     <div class="advantages-block__textblock">
-                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">Reliable Shipping</h3>
+                        <h3 class="advantages-block__h3-margin advantages-block__h3-spacing black-text h3-text">Reliable Shipping</h3>
                         <span class="advantages-block__gray-text">Green Society provides Canada Post Xpress Shipping right to your doorstep! You can also opt in for shipping insurance. For orders over $149, shipping is free!</span>
                     </div>
                 </div>
                 <div class="advantages-block__content-block">
                     <img class="advantages-block__img" src="/images/main/safe-home.svg" alt="Картинка марихуаны">
                     <div class="advantages-block__textblock">
-                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">You’re Safe With Us</h3>
+                        <h3 class="advantages-block__h3-margin advantages-block__h3-spacing black-text h3-text">You’re Safe With Us</h3>
                         <span class="advantages-block__gray-text">Our secure payment system accepts the most common forms of payments making the checkout process quicker! The payments we accept are debit, all major credit cards, and cryptocurrency.</span>
                     </div>
                 </div>
                 <div class="advantages-block__content-block">
                     <img class="advantages-block__img" src="/images/main/coin.svg" alt="Картинка монеты">
                     <div class="advantages-block__textblock">
-                        <h3 class="advantages-block__h3-margin advantages-block__black-text h3-text">Best Quality & Pricing</h3>
-                        <span class="advantages-block__gray-text">Here at Green Society, we take pride in the quality of our products and service. Our prices are set to ensure you receive your medication at a reasonable price and safely</span>
+                        <h3 class="advantages-block__h3-margin advantages-block__h3-spacing black-text h3-text">Best Quality & Pricing</h3>
+                        <span class="gray-text">Here at Green Society, we take pride in the quality of our products and service. Our prices are set to ensure you receive your medication at a reasonable price and safely</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="presentation-block presentation-block_padding">
+            <div class="presentation-block__top-block block-normalizer">
+                <h1 class="presentation-block__h1-limiter presentation-block__h1-spacing black-text h1-text">BEST DISPENSARY TO BUY WEED ONLINE IN CANADA</h1>
+                <div class="presentation-block__buttons-block">
+                    <div class="presentation-block__buttons-holder">
+                        @@include('html/pieces/customised_button.html', {
+                            "type": "button",
+                            "template": "button-white",
+                            "font": "button__text-16px",
+                            "padding": "12px 0px",
+                            "additional": "width: 30%; margin-right: 3%;",
+                            "path": "/",
+                            "text": "Best Sellers"
+                        })
+                        @@include('html/pieces/customised_button.html', {
+                            "type": "button",
+                            "template": "button-white",
+                            "font": "button__text-16px",
+                            "padding": "12px 0px",
+                            "additional": "width: 30%; margin-right: 3%;",
+                            "path": "/",
+                            "text": "Bundles & Promotions"
+                        })
+                        @@include('html/pieces/customised_button.html', {
+                            "type": "button",
+                            "template": "button-white",
+                            "font": "button__text-16px",
+                            "padding": "12px 0px",
+                            "additional": "width: 30%;",
+                            "path": "/",
+                            "text": "On Sale"
+                        })
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="presentation-block__bottom-block block-normalizer presentation-block__bottom-block_indentation">
+                <div class="presentation-block__green-card-holder">
+                    <div class="green-card"> 
+                        <img class="green-card__bg-element" src="/images/main/green-bg-element.svg" alt="">
+                        <div class="green-card__content">
+                            <img class="green-card__image" src="/images/main/weed/weed-type-1.png" alt="Картинка сушеной марихуаны" class="green-card__img">
+                            <h4 class="green-card__h4-margin h4-text white-text">Shop our Best Sellers</h4>
+                            <span class="green-card__text green-card__text_margin">Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis feugiat.</span>
+                            <a class="green-card__link green-link" href="/">View All</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="presentation-block__presentation-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include('html/pieces/weeb_slide.html', {
+                                "image": "/images/main/weed/weed-type-2.png",
+                                "ounce-visibility": "invisible",
+                                "ounce-text": "",
+                                "sold-out-visibility": "invisible",
+                                "type": "FLOWER",
+                                "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                "rate": "4.6/5",
+                                "review": "135",
+                                "material": "Sativa 100%",
+                                "material-visibility": "material-visible",
+                                "price": "$200.00",
+                                "sale": false,
+                                "newprice": ""
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/pieces/weeb_slide.html', {
+                                "image": "/images/main/weed/weed-type-1.png",
+                                "ounce-visibility": "invisible",
+                                "ounce-text": "",
+                                "sold-out-visibility": "visible",
+                                "type": "CONCENTRATES",
+                                "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                "rate": "4.6/5",
+                                "review": "135",
+                                "material": "Indica 70%",
+                                "material-visibility": "material-visible",
+                                "price": "$200.00",
+                                "sale": true,
+                                "newprice": "$102.00"
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/pieces/weeb_slide.html', {
+                                "image": "/images/main/weed/weed-type-2.png",
+                                "ounce-visibility": "visible",
+                                "ounce-text": "$60 ounce",
+                                "sold-out-visibility": "invisible",
+                                "type": "FLOWER",
+                                "name": "2 Oz Deal Ahi Tuna + Master Tuna",
+                                "rate": "4.6/5",
+                                "review": "135",
+                                "material": ".",
+                                "material-visibility": "material-invisible",
+                                "price": "$200.00",
+                                "sale": true,
+                                "newprice": "$102.00"
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/pieces/weeb_slide.html', {
+                                "image": "/images/main/weed/weed-type-2.png",
+                                "ounce-visibility": "invisible",
+                                "ounce-text": "",
+                                "sold-out-visibility": "invisible",
+                                "type": "FLOWER",
+                                "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                "rate": "4.6/5",
+                                "review": "135",
+                                "material": "Sativa 100%",
+                                "material-visibility": "material-visible",
+                                "price": "$200.00",
+                                "sale": false,
+                                "newprice": ""
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/pieces/weeb_slide.html', {
+                                "image": "/images/main/weed/weed-type-2.png",
+                                "ounce-visibility": "invisible",
+                                "ounce-text": "",
+                                "sold-out-visibility": "invisible",
+                                "type": "FLOWER",
+                                "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                "rate": "4.6/5",
+                                "review": "135",
+                                "material": "Sativa 100%",
+                                "material-visibility": "material-visible",
+                                "price": "$200.00",
+                                "sale": false,
+                                "newprice": ""
+                            })
+                        </div>
                     </div>
                 </div>
             </div>

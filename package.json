@@ -44,6 +44,7 @@
     "lodash.template": "^4.5.0"
   },
   "dependencies": {
-    "npm": "^8.7.0"
+    "npm": "^8.7.0",
+    "swiper": "^11.1.4"
   }
 }

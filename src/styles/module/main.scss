@@ -126,12 +126,82 @@
     &__h3-margin {
       margin-bottom: 16px;
     }
-    &__black-text {
-      color: #1A1E26;
+    &__h3-spacing {
       letter-spacing: -0.5px;
     }
-    &__gray-text {
-      color: #717378;
+  }
+  .presentation-block {
+    &_padding {
+      padding-top: 120px;
+      padding-bottom: 136px;
+    }
+    &__top-block {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 64px;
+    }
+    &__h1-limiter {
+      max-width: 948px;
+    }
+    &__h1-spacing {
+      letter-spacing: -4px;
+    }
+    &__buttons-block {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    &__buttons-holder {
+      min-width: 600px;
+    }
+    &__bottom-block {
+      display: flex;
+      &_indentation {
+        padding-right: 0px;
+        margin-top: 64px;
+      }
+    }
+    .green-card {
+      border-radius: 16px;
+      background: #05422C;
+      padding: 84px 83px;
+      position: relative;
+      overflow: hidden;
+      flex: 1;
+      &__bg-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+      &__image {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      &__h4-margin {
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+      &__text {
+        max-width: 216px;
+        text-align: center;
+        color: #FFFFFF99;
+        &_margin {
+          margin-bottom: 20px;
+        }
+      }
+      &__link {
+        align-self: center;
+      }
+    }
+    &__presentation-slider {
+      flex: 2;
     }
   }
 }

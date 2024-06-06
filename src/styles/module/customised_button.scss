@@ -14,11 +14,15 @@
     &__text-14px {
         font-size: 14px;
     }
+    &__text-12px {
+        font-size: 12px;
+    }
 }
 
 .button-green {
     background-color: #17AF26;
     color: #fff;
+    border: none;
 
     &:hover {
         background-color: #12841d;
@@ -30,6 +34,11 @@
     background-color: #fff;
 
     &:hover {
+        background-color: #F2F6F4;
+        border-color: #05422C;
+        color: #05422C;
+    }
+    &:focus {
         background-color: #F2F6F4;
         border-color: #05422C;
         color: #05422C;

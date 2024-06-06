@@ -1,0 +1,113 @@
+.weeb-slide {
+    &_props {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__img-block {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background: #F4F4F4;
+        border-radius: 8px;
+        padding: 38px 64px;
+    }
+    .invisible {
+        display: none;
+    }
+    .material-invisible {
+        opacity: 0.1;
+    }
+    &__ounce-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 16px;
+        background: #F2BC1B;
+        border-radius: 4px 0px 4px 0px;
+    }
+    &__ounce-text {
+        font-size: 14px;
+    }
+    &__sold-out-label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 21px 32px;
+        background: #05422C4D;
+        backdrop-filter: blur(2px);
+        border-radius: 100px;
+        white-space: nowrap;
+    }
+    &__sold-out-text {
+        font-size: 14px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__text-block {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        &_top {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    &__type {
+        font-weight: 300;
+    }
+    &__rate-block {
+        display: flex;
+        &_star-rate {
+            border-right: 1px solid #C8C9CB;
+            padding-right: 12px;
+        }
+        
+        &_review {
+            padding-left: 12px;
+        }
+        &_element {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__text {
+        font-size: 14px;
+    }
+    &__material-block {
+        background: #F2F6F4;
+        border-radius: 4px;
+        padding: 4px 10px 5px 10px;
+        margin-top: 4px;
+    }
+    &__material-text {
+        font-size: 12px;
+    }
+    &__price-holder {
+        display: flex;
+        align-items: center;
+    }
+    &__old-price {
+        text-decoration: line-through;
+    }
+    &__red-price {
+        font-size: 16px;
+    }
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+    
+    
+}

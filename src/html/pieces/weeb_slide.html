@@ -1,0 +1,83 @@
+<div class="weeb-slide weeb-slide_props">
+    <div class="weeb-slide__img-block">
+        <div class="weeb-slide__ounce-label @@ounce-visibility">
+            <span class="weeb-slide__ounce-text white-text">@@ounce-text</span>
+        </div>
+        <div class="weeb-slide__sold-out-label @@sold-out-visibility">
+            <span class="weeb-slide__sold-out-text white-text">Out Of Stock</span>
+        </div>
+        <div class="weeb-slide__padding-keeper">
+            <img class="weeb-slide__img" src="@@image" alt="Картинка слайдера марихуаны">
+        </div>
+    </div>
+    <div class="weeb-slide__text-block">
+        <div class="weeb-slide__text-block_top">
+            <span class="weeb-slide__type light-gray-text">@@type</span>
+            <h5 class="weeb-slide__name h5-text black-text">@@name</h5>
+            <div class="weeb-slide__rate-block">
+                <div class="weeb-slide__rate-block_star-rate weeb-slide__rate-block_element">
+                    <img src="/images/main/star.svg" alt="Зартинка звезды">
+                    <span class="weeb-slide__text black-text">&nbsp;@@rate</span>
+                </div>
+                <div class="weeb-slide__rate-block_review weeb-slide__rate-block_element">
+                    <span class="weeb-slide__rate-block_review-count weeb-slide__text black-text">@@review</span>
+                    <span class="weeb-slide__text super-light-gray-text">&nbsp;Reviews</span>
+                </div>
+            </div>
+            <div class="weeb-slide__material-block @@material-visibility">
+                <span class="weeb-slide__material-text dark-green-text">@@material</span>
+            </div>
+        </div>
+        @@if (sale === true) {
+            <div class="weeb-slide__price-holder">
+                <span class="weeb-slide__old-price weeb-slide__text light-gray-text">@@price</span>
+                <span class="weeb-slide__new-price red-text">&nbsp;&nbsp;@@newprice</span>
+            </div>
+        }
+        @@if (sale === false) {
+            <div class="weeb-slide__price-holder">
+                <span class="weeb-slide__price weeb-slide__red-price red-text">@@price</span>
+                <span class="weeb-slide__new-price weeb-slide__text light-gray-text">&nbsp;/ gram</span>
+            </div>
+        }
+        <div class="weeb-slide__buttons">
+            @@include('html/pieces/customised_button.html', {
+                "type": "button",
+                "template": "button-white",
+                "font": "button__text-12px",
+                "padding": "7px 10px",
+                "additional": "border-radius: 0px",
+                "path": "",
+                "text": "28g"
+            })
+            @@include('html/pieces/customised_button.html', {
+                "type": "button",
+                "template": "button-white",
+                "font": "button__text-12px",
+                "padding": "7px 10px",
+                "additional": "border-radius: 0px",
+                "path": "",
+                "text": "1/2lb"
+            })
+            @@include('html/pieces/customised_button.html', {
+                "type": "button",
+                "template": "button-white",
+                "font": "button__text-12px",
+                "padding": "7px 10px",
+                "additional": "border-radius: 0px",
+                "path": "",
+                "text": "1/4lb"
+            })
+        </div>
+        @@include('html/pieces/customised_button.html', {
+            "type": "button",
+            "template": "button-green",
+            "font": "button__text-14px",
+            "padding": "9.5px 24px",
+            "additional": "font-weight: 500;",
+            "path": "",
+            "text": "Add to Cart"
+        })
+    </div>
+
+</div>

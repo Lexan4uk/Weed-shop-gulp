@@ -26,8 +26,40 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
-.white {
+.white-text {
   color: white;
+}
+.black-text {
+  color: #1A1E26;
+}
+.gray-text {
+  color: #717378;
+}
+.light-gray-text {
+  color: #9D9EA2;
+}
+.super-light-gray-text {
+  color: #9D9EA2;
+}
+.dark-green-text {
+  color: #05422C;
+}
+.red-text {
+  color: #EB2606;
+}
+.green-link {
+  color: #17AF26;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.swiper {
+  height: auto;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .h1-text,
@@ -39,7 +71,15 @@ body {
 .h3-text {
   font-size: 24px;
   font-weight: 500;
- }
+}
+.h4-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.h5-text {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 
 @include media-down($bp1) {
