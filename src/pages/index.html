@@ -116,9 +116,9 @@
             </div>
             <div class="presentation-block__bottom-block block-normalizer presentation-block__bottom-block_indentation">
                 <div class="presentation-block__green-card-holder">
-                    <div class="green-card"> 
+                    <div class="green-card green-card_presentation"> 
                         <img class="green-card__bg-element" src="/images/main/green-bg-element.svg" alt="">
-                        <div class="green-card__content">
+                        <div class="green-card__content green-card__content_presentation">
                             <img class="green-card__image" src="/images/main/weed/weed-type-1.png" alt="Картинка сушеной марихуаны" class="green-card__img">
                             <h4 class="green-card__h4-margin h4-text white-text">Shop our Best Sellers</h4>
                             <span class="green-card__text green-card__text_margin">Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis feugiat.</span>
@@ -215,7 +215,99 @@
                             })
                         </div>
                     </div>
+                    <div class="presentation-block__presentation-slider_button presentation-swiper-button-prev swiper-button-prev"></div>
+                    <div class="presentation-block__presentation-slider_button presentation-swiper-button-next swiper-button-next"></div>
                 </div>
+            </div>
+        </section>
+        <section class="feedback-block feedback-block_padding">
+            <div class="feedback-block__content block-normalizer">
+                <div class="feedback-block__top-block">
+                    <h2 class="h2-text black-text">CUSTOMER TESTIMONIALS</h2>
+                </div>
+                <div class="feedback-block__bottom-block">
+                    <div class="feedback-block__green-card-holder">
+                        <div class="green-card green-card_feedback"> 
+                            <div class="green-card__content green-card__content_feedback">
+                                <h3 class="green-card__h3-text green-card__h3-border white-text">VOTED BEST ONLINE DISPENSARY IN CANADA</h3>
+                                <img class="green-card__google-logo" src="/images/main/google.svg" alt="Логотоип гугл">
+                                <div class="green-card__rate-block green-card__rate-block_text-weight">
+                                    <span class="green-card__rate-block_text white-text">EXELLENCET</span>
+                                    <div class="green-card__rate-block_rates-holder">
+                                        <div class="green-card__rate-block_stars">
+                                            <img class="green-card__rate-block_star" src="/images/main/star.svg" alt="Картинка звезды">
+                                            <img class="green-card__rate-block_star" src="/images/main/star.svg" alt="Картинка звезды">
+                                            <img class="green-card__rate-block_star" src="/images/main/star.svg" alt="Картинка звезды">
+                                            <img class="green-card__rate-block_star" src="/images/main/star.svg" alt="Картинка звезды">
+                                            <img class="green-card__rate-block_star" src="/images/main/star.svg" alt="Картинка звезды">
+                                        </div>
+                                        <div class="green-card__rate-block_reviews">
+                                            <span class="white-text">on 135</span><span class="green-card__text">&nbsp;Reviews</span>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-block__feedback-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('html/pieces/feedback_slide.html', {
+                                    "avatar": "/images/main/feedback/avatar-1.png",
+                                    "avatarbg": "#73C255",
+                                    "name": "Vikki Starr",
+                                    "rate": 4,
+                                    "text": "Absolutely love TopShelfBC; affordable on any budget and such fast delivery, straight to my door! I recommend them to all my friends and family for their 420 needs.",
+                                    "date": "January 15, 2023"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/feedback_slide.html', {
+                                    "avatar": "/images/main/feedback/avatar-2.png",
+                                    "avatarbg": "#594F27",
+                                    "name": "Terry Baskey",
+                                    "rate": 5,
+                                    "text": "Best damn place to buy your canabis at great prices",
+                                    "date": "January 5, 2023"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/feedback_slide.html', {
+                                    "avatar": "/images/main/feedback/avatar-3.png",
+                                    "avatarbg": "#422F15",
+                                    "name": "Terry Baskey",
+                                    "rate": 5,
+                                    "text": "Best damn place to buy your canabis at great prices",
+                                    "date": "January 5, 2023"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/feedback_slide.html', {
+                                    "avatar": "/images/main/feedback/avatar-1.png",
+                                    "avatarbg": "#D0B229",
+                                    "name": "Vikki Starr",
+                                    "rate": 0,
+                                    "text": "Absolutely love TopShelfBC; affordable on any budget and such fast delivery, straight to my door! I recommend them to all my friends and family for their 420 needs.",
+                                    "date": "January 15, 2023"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/feedback_slide.html', {
+                                    "avatar": "/images/main/feedback/avatar-1.png",
+                                    "avatarbg": "#D0B229",
+                                    "name": "Vikki Starr",
+                                    "rate": 4,
+                                    "text": "Absolutely love TopShelfBC; affordable on any budget and such fast delivery, straight to my door! I recommend them to all my friends and family for their 420 needs.",
+                                    "date": "January 15, 2023"
+                                })
+                            </div>
+                        </div>
+                        <div class="feedback-block__feedback-slider_button feedback-swiper-button-prev swiper-button-prev"></div>
+                        <div class="feedback-block__feedback-slider_button feedback-swiper-button-next swiper-button-next"></div>
+                    
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>

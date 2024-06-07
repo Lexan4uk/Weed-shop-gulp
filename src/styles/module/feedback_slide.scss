@@ -1,0 +1,47 @@
+.feedback-slide {
+    &_props {
+        border: 1px solid #F4F4F4;
+        border-radius: 16px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__person {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #C8C9CB
+    }
+    &__avatar {
+        height: 36px;
+        width: 36px;
+        border-radius: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__avatar-img {
+        height: 150%;
+        width: 150%;
+        transform: translate(-30%, 10%);
+    }
+    &__stars {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 16px;
+    }
+    @include media-down($bp3) {
+        &_props {
+            padding: 24px;
+        }
+        &__bottom-block {
+            margin-top: 80px;
+        }
+    }
+}

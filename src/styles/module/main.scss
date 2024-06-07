@@ -4,6 +4,7 @@
       background-color: #648A7C;
       background-image: conic-gradient(from 180deg at 50% 50%, rgba(5, 66, 44, 0) -4.67deg, #05422C 299.08deg, rgba(5, 66, 44, 0) 355.33deg, #05422C 659.08deg);
     }
+
     &_block-normalizer {
       max-width: 1332px;
     }
@@ -101,107 +102,246 @@
       }
     }
   }
+
   .advantages-block {
     &_bg {
       background: #F2F6F4;
     }
+
     &_block-normalizer {
       max-width: 1332px;
     }
+
     &__main {
       padding-top: 80px;
       padding-bottom: 104px;
       display: flex;
       gap: 32px;
     }
+
     &__content-block {
       display: flex;
       gap: 24px;
     }
+
     &__img {
       padding: 22px;
       border-radius: 100px;
       background-color: #fff;
     }
+
     &__h3-margin {
       margin-bottom: 16px;
     }
+
     &__h3-spacing {
       letter-spacing: -0.5px;
     }
   }
+
+  .green-card {
+    border-radius: 16px;
+    background: #05422C;
+    position: relative;
+    overflow: hidden;
+
+    &_presentation {
+      padding: 84px 83px;
+    }
+
+    &_feedback {
+      padding: 40px;
+    }
+
+
+    &__bg-element {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      z-index: 2;
+      position: relative;
+
+      &_presentation {
+        text-align: center;
+      }
+
+      &_feedback {
+        text-align: left;
+        gap: 32px;
+      }
+    }
+
+    &__image {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__h4-margin {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      max-width: 216px;
+      text-align: center;
+      color: #FFFFFF99;
+
+      &_margin {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__link {
+      align-self: center;
+    }
+
+    &__h3-text {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    &__h3-border {
+      padding-bottom: 32px;
+      border-bottom: 1px solid #346654;
+    }
+
+    &__rate-block {
+      &_text-weight {
+        font-weight: 300;
+      }
+
+      &_rates-holder {
+        display: flex;
+      }
+
+      &_text {
+        margin-bottom: 16px;
+        display: block;
+      }
+
+      &_stars {
+        display: flex;
+        gap: 4px;
+        padding-right: 24px;
+        margin-right: 24px;
+        border-right: 1px solid #648A7C;
+      }
+    }
+
+  }
+
   .presentation-block {
     &_padding {
       padding-top: 120px;
       padding-bottom: 136px;
     }
+
     &__top-block {
       align-items: center;
       text-align: center;
       flex-direction: column;
       gap: 64px;
     }
+
     &__h1-limiter {
       max-width: 948px;
     }
+
     &__h1-spacing {
       letter-spacing: -4px;
     }
+
     &__buttons-block {
       width: 100%;
       overflow-x: auto;
       white-space: nowrap;
     }
+
     &__buttons-holder {
       min-width: 600px;
     }
+
     &__bottom-block {
       display: flex;
+
       &_indentation {
         padding-right: 0px;
         margin-top: 64px;
       }
     }
-    .green-card {
-      border-radius: 16px;
-      background: #05422C;
-      padding: 84px 83px;
-      position: relative;
-      overflow: hidden;
-      flex: 1;
-      &__bg-element {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      &__content {
-        display: flex;
-        flex-direction: column;
-      }
-      &__image {
-        z-index: 2;
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-      &__h4-margin {
-        margin-top: 24px;
-        margin-bottom: 8px;
-      }
-      &__text {
-        max-width: 216px;
-        text-align: center;
-        color: #FFFFFF99;
-        &_margin {
-          margin-bottom: 20px;
-        }
-      }
-      &__link {
-        align-self: center;
-      }
-    }
+
     &__presentation-slider {
       flex: 2;
+      margin-left: 30px;
+
+      &_button {
+        height: 36px;
+        width: 36px;
+        box-shadow: 0px 6px 16px 0px #0000001F;
+        color: #54576D;
+        background: #fff;
+        border-radius: 100px;
+        transform: translateY(-150%);
+
+        &:after {
+          font-size: 14px;
+        }
+      }
+    }
+
+
+
+  }
+
+  .feedback-block {
+    &_padding {
+      padding-bottom: 160px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__top-block {
+      margin-bottom: 64px;
+    }
+
+    &__bottom-block {
+      display: flex;
+    }
+
+    &__green-card-holder {
+      flex: 1;
+    }
+
+    &__feedback-slider {
+      flex: 2;
+      margin-left: 30px;
+
+      &_button {
+        height: 36px;
+        width: 36px;
+        box-shadow: 0px 6px 16px 0px #0000001F;
+        color: #54576D;
+        background: #fff;
+        border-radius: 100px;
+        
+
+        &:after {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
@@ -226,17 +366,20 @@
         padding-bottom: 56px;
       }
     }
+
     .advantages-block {
       &__main {
         padding-top: 64px;
         padding-bottom: 64px;
         flex-direction: column;
       }
+
       &__img {
         padding: 14px;
         height: 100px;
         width: 100px;
       }
+
       &__h3-margin {
         margin-bottom: 12px;
       }
@@ -279,6 +422,54 @@
         margin-bottom: -124px;
         margin-right: 0px;
 
+      }
+    }
+    .green-card {
+      &_presentation {
+        flex: none;
+        padding-top: 28.5px;
+        padding-bottom: 28.5px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &_feedback {
+        padding: 24px;
+      }
+      
+
+      &__image {
+        padding-left: 95.5px;
+        padding-right: 95.5px;
+      }
+    }
+
+    .presentation-block {
+      &__bottom-block {
+        flex-direction: column;
+
+        &_indentation {
+          padding-right: 20px;
+          margin-top: 40px;
+        }
+      }
+
+      &__presentation-slider {
+        flex: none;
+        margin-left: 0;
+        margin-top: 32px;
+      }
+      
+
+    }
+    .feedback-block {
+      &__bottom-block {
+        flex-direction: column;
+      }
+
+      &__feedback-slider {
+        flex: none;
+        margin-top: 32px;
+        margin-left: 0;
       }
     }
   }

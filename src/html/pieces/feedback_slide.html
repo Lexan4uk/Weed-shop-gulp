@@ -1,0 +1,22 @@
+<div class="feedback-slide feedback-slide_props">
+    <div class="feedback-slide__top-block">
+        <div class="feedback-slide__person">
+            <div class="feedback-slide__avatar" style="background: @@avatarbg;">
+                <img class="feedback-slide__avatar-img" src="@@avatar" alt="Аватар отзыва">
+            </div>
+            <span class="feedback-slide__avatar-name black-text">@@name</span>
+        </div>
+        <div class="feedback-slide__stars">
+            @@for (var i = 0; i < (rate); i++) {
+                <img class="feedback-block__star" src="/images/main/feedback/star.svg" alt="Полная звезда">
+            }
+            @@for (var i = 0; i < (5 - rate); i++) {
+                <img class="feedback-block__star" src="/images/main/feedback/empty-star.svg" alt="Пустая звезда">
+            }
+        </div>
+        <span class="black-text">@@text</span>
+    </div>
+    <div class="feedback-slide__bottom-block">
+        <span class="super-light-gray-text">@@date</span>
+    </div>
+</div>
