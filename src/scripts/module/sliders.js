@@ -36,4 +36,24 @@ window.addEventListener('DOMContentLoaded', () => {
           }
         
     });
+    const weed_slider = new Swiper('.weed-block__products-slider', {
+        breakpoints: {
+            0: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+                grid: {
+                    fill: "row",
+                    rows: 4,
+                },
+            },
+            950: {
+                spaceBetween: 32,
+                slidesPerView: 4,
+                grid: {
+                    fill: "row",
+                    rows: 2,
+                },
+            },
+        }
+    });
 })

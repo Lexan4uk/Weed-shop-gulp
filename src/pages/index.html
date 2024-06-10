@@ -40,15 +40,15 @@
             </div>
             <div class="welcome-block__images-holder">
                 <div class="welcome-block__cube welcome-block__left-cube">
-                    <img class="welcome-block__cube-img welcome-block__left-cube_img" src="/images/main/weed-left.png" alt="Наркота">
+                    <img class="welcome-block__cube-img welcome-block__left-cube_img" src="/images/main/weed/weed-left.png" alt="Наркота">
                     <img src="/images/main/cube-left.svg" alt="Кубик">
                 </div>
                 <div class="welcome-block__cube welcome-block__center-cube">
-                    <img class="welcome-block__cube-img welcome-block__center-cube_img" src="/images/main/weed-center.png" alt="Наркота">
+                    <img class="welcome-block__cube-img welcome-block__center-cube_img" src="/images/main/weed/weed-center.png" alt="Наркота">
                     <img src="/images/main/cube-center.svg" alt="Кубик">
                 </div>
                 <div class="welcome-block__cube welcome-block__right-cube">
-                    <img class="welcome-block__cube-img welcome-block__right-cube_img" src="/images/main/weed-right.png" alt="Наркота">
+                    <img class="welcome-block__cube-img welcome-block__right-cube_img" src="/images/main/weed/weed-right.png" alt="Наркота">
                     <img src="/images/main/cube-right.svg" alt="Кубик">
                 </div>
             </div>
@@ -308,6 +308,279 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+        <section class="weed-block">
+            <div class="weed-block__holder block-normalizer">
+                <div class="weed-block__top-block">
+                    <h2 class="h2-text weed-block__h2-props black-text">CHOOSE YOUR WEED</h2>
+                    <div class="weed-block__filter">
+                        <span class="weed-block__filter-text black-text">Filter by Interest</span>
+                        <div class="weed-block__filter-holder">
+                            <div class="weed-block__filter-buttons">
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Flowers"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Mushrooms"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Concentrate"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Edibles"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Shop All Weed"
+                                })
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weed-block__bottom-block">
+                    <div class="weed-block__products-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-1.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-3.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-left.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master <br>Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-center.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-4.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="help-block help-block_bg help-block_props">
+            <article class="ref-block ref-block_props block-normalizer">
+                <div class="ref-block_relative">
+                    <div class="ref-block__content">
+                        <img class="ref-block__img" src="/images/main/ref-bg.svg" alt="Значок регистрации">
+                        fdfdfdfdfdfd
+                    </div>
+                </div>
+                
+
+            </article>
+            <div class="help-block__content block-normalizer">
+                <div class="help-block__top-block">
+                    <h2 class="help-block__h2-props h2-text white-text">HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER MARIJUANA</h2>
+                    <span class="help-block__top-text-props light-gray-text">Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible across multiple platforms and simple to understand, meaning that more people can come to us to buy their cannabis products online.</span>
+                </div>
+                <div class="help-block__bottom-block">
+                    <div class="help-block__content-block">
+                        <div class="help-block__img-holder">
+                            <span class="help-block__img-number">1</span>
+                            <img class="help-block__img" src="/images/main/register-img.svg" alt="Значок регистрации">
+                        </div>
+                        <span class="help-block__title white-text">REGISTER</span>
+                        <span class="help-block__text light-gray-text">Sign up for an account with us. This is quick and simple. We don’t require any more details from you than the bare minimum needed for you to place an order and get your product delivered.</span>
+                    </div>
+                    <div class="help-block__content-block">
+                        <div class="help-block__img-holder">
+                            <span class="help-block__img-number">2</span>
+                            <img class="help-block__img" src="/images/main/bag-img.svg" alt="Значок регистрации">
+                        </div>
+                        <span class="help-block__title white-text">SHOP</span>
+                        <span class="help-block__text light-gray-text">Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates and mushrooms there is bound to be something for everyone.</span>
+                    </div>
+                    <div class="help-block__content-block">
+                        <div class="help-block__img-holder">
+                            <span class="help-block__img-number">3</span>
+                            <img class="help-block__img" src="/images/main/wallet-img.svg" alt="Значок регистрации">
+                        </div>
+                        <span class="help-block__title white-text">MAKE PAYMENT</span>
+                        <span class="help-block__text light-gray-text">Pay securely. Our site boasts sturdy protection certificates to keep your card details and related data safe.</span>
+                    </div>
+                    <div class="help-block__content-block">
+                        <div class="help-block__img-holder">
+                            <span class="help-block__img-number">4</span>
+                            <img class="help-block__img" src="/images/main/check-img.svg" alt="Значок регистрации">
+                        </div>
+                        <span class="help-block__title white-text">RELAX</span>
+                        <span class="help-block__text light-gray-text">Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will provide you with a tracking number so then you can follow your mail order marijuana every step of the way.</span>
+                    </div>
+                </div>
+                @@include('html/pieces/customised_button.html', {
+                    "type": "hyperlink",
+                    "template": "button-green help-block__green-button-margin help-block__green-button_first",
+                    "font": "button__text-18px",
+                    "padding": "20px 56px",
+                    "additional": "",
+                    "path": "/",
+                    "text": "Choose your Weed"
+                })
+                @@include('html/pieces/customised_button.html', {
+                    "type": "hyperlink",
+                    "template": "button-green help-block__green-button-margin help-block__green-button_second",
+                    "font": "button__text-18px",
+                    "padding": "20px 56px",
+                    "additional": "",
+                    "path": "/",
+                    "text": "Refer Here"
+                })
             </div>
         </section>
     </main>
