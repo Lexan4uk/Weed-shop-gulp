@@ -56,4 +56,21 @@ window.addEventListener('DOMContentLoaded', () => {
             },
         }
     });
+    const choose_slider = new Swiper('.choose-block__slider', {
+        breakpoints: {
+            0: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+                grid: {
+                    fill: "row",
+                    rows: 2,
+                },
+            },
+            950: {
+                spaceBetween: 32,
+                slidesPerView: 4,
+
+            },
+        }
+    });
 })

@@ -17,7 +17,7 @@
             <div class="welcome-block__main welcome-block_block-normalizer block-normalizer">
                 <div class="welcome-block__text-holder">
                     <div class="welcome-block__top-text welcome-block__separation">
-                        <span class="welcome-block__yellow-text text">BEST SELLER</span>
+                        <span class="welcome-block__yellow-text yellow-text text">BEST SELLER</span>
                         <h2 class="welcome-block__big-text h2-text white-text">BEST DISPENSARY TO<br> BUY WEED ONLINE</h2>
                         <span class="white-text">Vitamins & Supplements</span>
                     </div>
@@ -120,7 +120,7 @@
                         <img class="green-card__bg-element" src="/images/main/green-bg-element.svg" alt="">
                         <div class="green-card__content green-card__content_presentation">
                             <img class="green-card__image" src="/images/main/weed/weed-type-1.png" alt="Картинка сушеной марихуаны" class="green-card__img">
-                            <h4 class="green-card__h4-margin h4-text white-text">Shop our Best Sellers</h4>
+                            <h4 class="green-card__h4-margin green-card__h4-text white-text">Shop our Best Sellers</h4>
                             <span class="green-card__text green-card__text_margin">Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis feugiat.</span>
                             <a class="green-card__link green-link" href="/">View All</a>
                         </div>
@@ -517,17 +517,29 @@
             <article class="ref-block ref-block_props block-normalizer">
                 <div class="ref-block_relative">
                     <div class="ref-block__content">
-                        <img class="ref-block__img" src="/images/main/ref-bg.svg" alt="Значок регистрации">
-                        fdfdfdfdfdfd
+                        <img class="ref-block__img" src="/images/main/ref-bg.svg" alt="Бэкграунд реферального блока">
+                        <div class="ref-block__textblock">
+                            <h2 class="h2-text white-text">REFER A FRIENDS</h2>
+                            <div class="ref-block__bottom-text">
+                                <span class="white-text">And get <span class="yellow-text">$30!</span></span>
+                            </div>
+                        </div>
+                        @@include('html/pieces/customised_button.html', {
+                            "type": "hyperlink",
+                            "template": "button-green ref-block__green-button",
+                            "font": "button__text-18px",
+                            "padding": "20px 56px",
+                            "additional": "",
+                            "path": "/",
+                            "text": "Refer Here"
+                        })
                     </div>
                 </div>
-                
-
             </article>
             <div class="help-block__content block-normalizer">
                 <div class="help-block__top-block">
                     <h2 class="help-block__h2-props h2-text white-text">HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER MARIJUANA</h2>
-                    <span class="help-block__top-text-props light-gray-text">Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible across multiple platforms and simple to understand, meaning that more people can come to us to buy their cannabis products online.</span>
+                    <p class="help-block__top-text-props light-gray-text">Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible across multiple platforms and simple to understand, meaning that more people can come to us to buy their cannabis products online.</p>
                 </div>
                 <div class="help-block__bottom-block">
                     <div class="help-block__content-block">
@@ -535,32 +547,32 @@
                             <span class="help-block__img-number">1</span>
                             <img class="help-block__img" src="/images/main/register-img.svg" alt="Значок регистрации">
                         </div>
-                        <span class="help-block__title white-text">REGISTER</span>
-                        <span class="help-block__text light-gray-text">Sign up for an account with us. This is quick and simple. We don’t require any more details from you than the bare minimum needed for you to place an order and get your product delivered.</span>
+                        <h4 class="help-block__title h4-text white-text">REGISTER</h4>
+                        <p class="help-block__text light-gray-text">Sign up for an account with us. This is quick and simple. We don’t require any more details from you than the bare minimum needed for you to place an order and get your product delivered.</p>
                     </div>
                     <div class="help-block__content-block">
                         <div class="help-block__img-holder">
                             <span class="help-block__img-number">2</span>
                             <img class="help-block__img" src="/images/main/bag-img.svg" alt="Значок регистрации">
                         </div>
-                        <span class="help-block__title white-text">SHOP</span>
-                        <span class="help-block__text light-gray-text">Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates and mushrooms there is bound to be something for everyone.</span>
+                        <h4 class="help-block__title h4-text white-text">SHOP</h4>
+                        <p class="help-block__text light-gray-text">Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates and mushrooms there is bound to be something for everyone.</p>
                     </div>
                     <div class="help-block__content-block">
                         <div class="help-block__img-holder">
                             <span class="help-block__img-number">3</span>
                             <img class="help-block__img" src="/images/main/wallet-img.svg" alt="Значок регистрации">
                         </div>
-                        <span class="help-block__title white-text">MAKE PAYMENT</span>
-                        <span class="help-block__text light-gray-text">Pay securely. Our site boasts sturdy protection certificates to keep your card details and related data safe.</span>
+                        <h4 class="help-block__title h4-text white-text">MAKE PAYMENT</h4>
+                        <p class="help-block__text light-gray-text">Pay securely. Our site boasts sturdy protection certificates to keep your card details and related data safe.</p>
                     </div>
                     <div class="help-block__content-block">
                         <div class="help-block__img-holder">
                             <span class="help-block__img-number">4</span>
                             <img class="help-block__img" src="/images/main/check-img.svg" alt="Значок регистрации">
                         </div>
-                        <span class="help-block__title white-text">RELAX</span>
-                        <span class="help-block__text light-gray-text">Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will provide you with a tracking number so then you can follow your mail order marijuana every step of the way.</span>
+                        <h4 class="help-block__title h4-text white-text">RELAX</h4>
+                        <p class="help-block__text light-gray-text">Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will provide you with a tracking number so then you can follow your mail order marijuana every step of the way.</p>
                     </div>
                 </div>
                 @@include('html/pieces/customised_button.html', {
@@ -581,6 +593,237 @@
                     "path": "/",
                     "text": "Refer Here"
                 })
+            </div>
+        </section>
+        <section class="fulladvantages-block">
+            <div class="fulladvantages-block__content-holder fulladvantages-block__padding block-normalizer">
+                <div class="fulladvantages-block__top-block">
+                    <h2 class="fulladvantages-block__article h2-text black-text">WHAT MAKES US THE <span class="yellow-text">#1</span> ONLINE MARIJUANA DISPENSARY IN CANADA?</h2>
+                    <p class="fulladvantages-block__article-text gray-text">When it comes to what makes us the foremost <a class="fulladvantages-block__article-link gray-text" href="/">online marijuana dispensary in Canada</a>, we could wax lyrical about our positive qualities. Instead, to make this information clearer, we’ve highlighted the six prioritized features that we feel makes us a cut above the rest.</p>
+                </div>
+                <div class="fulladvantages-block__bottom-block">
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/customer-img.svg" alt="Картинка пользователя">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">CUSTOMER SERVICE</h4>
+                            <p class="fulladvantages-block__card-text gray-text">Whether it is answering any questions you have before making a purchase, helping out with the buying process itself or taking your feedback under consideration, we are proud to provide high quality customer service that makes you – the customer – the most important person in the transaction.</p>
+                        </div>
+                    </div>
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/shield-img.svg" alt="Картинка щита">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">SECURITY</h4>
+                            <p class="fulladvantages-block__card-text gray-text">When it comes to security, we only keep what details are necessary for you to have an account with us and make an order. When it comes to shipping your mail order marijuana out, we use only tamper-proof and discrete packaging so then what you’ve purchased is your business only.</p>
+                        </div>
+                    </div>
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/diamond-img.svg" alt="Картинка алмаза">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">BEST VALUE</h4>
+                            <p class="fulladvantages-block__card-text gray-text">We are continually adjusting what we supply and our prices to ensure that we maintain an optimal balance of affordable and quality for our products. We invest in the best quality strains that we can find and are always on the lookout for new, affordable and high quality weed products.</p>
+                        </div>
+                    </div>
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/truck-img.svg" alt="Картинка грузовика">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">DELIVERY INSURANCE</h4>
+                            <p class="fulladvantages-block__card-text gray-text">If your mail order marijuana becomes lost, stolen, or damaged during transit, we will send you a replacement completely free of charge. Free Canada Post Xpress shipping on all orders over $120</p>
+                        </div>
+                    </div>
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/medal-img.svg" alt="Картинка медали">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">HIGHEST QUALITY</h4>
+                            <p class="fulladvantages-block__card-text gray-text">All of our cannabis products are tested to ensure that they are the highest quality possible. We work with expert suppliers and are always revising what makes a quality cannabis product to ensure that we have only the best available.</p>
+                        </div>
+                    </div>
+                    <div class="fulladvantages-block__card">
+                        <img class="fulladvantages-block__card-img" src="/images/main/hands-img.svg" alt="Картинка пожимания рук">
+                        <div class="fulladvantages-block__card-textblock">
+                            <h4 class="fulladvantages-block__card-article h4-text black-text">TRUST</h4>
+                            <p class="fulladvantages-block__card-text gray-text">With over 15 years in the weed business, you can rest assured that you will be taken care of. You can guarantee that we have your best interests in mind. Feel free to check out our reviews.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="choose-block">
+            <div class="choose-block__holder choose-block__padding block-normalizer">
+                <div class="choose-block__top-block">
+                    <h2 class="h2-text choose-block__h2-props black-text">RECENTLY ADDED</h2>
+                    <div class="choose-block__filter">
+                        <span class="choose-block__filter-text black-text">Filter by Interest</span>
+                        <div class="choose-block__filter-holder">
+                            <div class="choose-block__filter-buttons">
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Flowers"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Mushrooms"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Concentrate"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Edibles"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-16px",
+                                    "padding": "12px 20px",
+                                    "additional": "",
+                                    "path": "/",
+                                    "text": "Shop All Weed"
+                                })
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-block__bottom-block">
+                    <div class="choose-block__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$80.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-left.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master <br>Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-center.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-4.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$80.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="weed-types-block">
+            <div class="weed-types-block__holder weed-types-block__props block-normalizer">
+                <div class="weed-types-block__card">
+                    <div class="weed-types-block__card-img-block">
+                        <div class="weed-types-block__card-img-holder">
+                            <img class="weed-types-block__card-img" src="/images/main/indica-img.png" alt="Картинка каннабиса"></img>
+                            <img class="weed-types-block__add-img" src="/images/main/zzz.png" alt="Картинка спящего">
+                        </div>
+                    </div>
+                    <div class="weed-types-block__text-block">
+                        <h4 class="weed-types-block__article black-text">Indica</h4>
+                        <p class="weed-types-block__text gray-text">
+                            This type of cannabis is commonly taken by those who want to sink into a state of total relaxation in every limb. This reduces stress overall and can take your worries and fatigue away. Because of its relaxing effects, it is suggested to use this type of cannabis at night. It is particularly recommended for people who have trouble sleeping, be it due to insomnia, pain or other associated sleep issues.
+                        </p>
+                    </div>
+                    <a class="weed-types-block__link green-link">Shop Indica</a>
+                </div>
+                <div class="weed-types-block__card">
+                    <div class="weed-types-block__card-img-block">
+                        <div class="weed-types-block__card-img-holder">
+                            <img class="weed-types-block__card-img" src="/images/main/indica-img.png" alt="Картинка каннабиса"></img>
+                            <img class="weed-types-block__add-img" src="/images/main/sun.png" alt="Картинка спящего">
+                        </div>                    </div>
+                    <div class="weed-types-block__text-block">
+                        <h4 class="weed-types-block__article black-text">Sativa</h4>
+                        <p class="weed-types-block__text gray-text">
+                            Contrary to the deep all-body relaxation that comes with the use of indica strains, sativas are known for increasing the feeling of creativity, enhancing focus and lessening anxiety. This is more of a mind-centered high in terms of how and where you will feel the effects. Given its stimulating nature, it is recommended to use this during the day.
+                        </p>
+                    </div>
+                    <a class="weed-types-block__link green-link">Shop Sativa</a>
+                </div>
+                <div class="weed-types-block__card">
+                    <div class="weed-types-block__card-img-block">
+                        <img class="weed-types-block__card-img" src="/images/main/hybrids-img.png" alt="Картинка каннабиса"></img>
+                    </div>
+                    <div class="weed-types-block__text-block">
+                        <h4 class="weed-types-block__article black-text">Hybrids</h4>
+                        <p class="weed-types-block__text gray-text">
+                            Hybrid strains are just that – they combine the head-focused high effects of sativas with the bodily relaxation of indicas. This is ideal for people who really want to sooth any fatigue and worries while also clearing the mind ready to focus fresh on something new. Hybrids are expertly tailored to result in strains with specific effects. Useful strain vocabulary to familiarize yourself with when it comes to hybrids includes sativa-dominant (full, bodily relaxation), indica-dominant (boosting creativity, increasing mood and lessening anxiety) and balanced (the best of both worlds).                        </p>
+                    </div>
+                    <a class="weed-types-block__link green-link">Shop Hybrids</a>
+                </div>
             </div>
         </section>
     </main>

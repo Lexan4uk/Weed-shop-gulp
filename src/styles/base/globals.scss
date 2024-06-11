@@ -46,7 +46,10 @@ body {
   color: #05422C;
 }
 .red-text {
-  color: #EB2606;
+  color: #EB2606 !important;
+}
+.yellow-text {
+  color: #F2BC1B !important;
 }
 .green-link {
   color: #17AF26;
@@ -74,7 +77,7 @@ body {
   font-weight: 500;
 }
 .h4-text {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 .h5-text {
@@ -94,6 +97,12 @@ body {
 
   .h3-text {
     font-size: 20px;
+  }
+  .h4-text {
+    font-size: 18px;
+  }
+  .h5-text {
+    font-size: 16px;
   }
 
   .text {
