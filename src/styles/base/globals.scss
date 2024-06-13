@@ -19,6 +19,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+  flex: 1;
 }
 
 .simple-button {
@@ -37,9 +38,6 @@ body {
   color: #717378;
 }
 .light-gray-text {
-  color: #9D9EA2;
-}
-.super-light-gray-text {
   color: #9D9EA2;
 }
 .dark-green-text {

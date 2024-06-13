@@ -1,0 +1,79 @@
+.email-promo-block {
+    &_props {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &_bg {
+      background: #05422C;
+    }
+    &__holder {
+        padding: 64px;
+        width: 100%;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__article {
+        max-width: 789px;
+        letter-spacing: -4px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 20px;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #346654
+    }
+    &__email-form {
+        display: flex;
+        gap:32px;
+        white-space: nowrap;
+    }
+    &__email-field {
+        background: #00000000;
+        border: 1px solid #346654;
+        border-radius: 100px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 44px;
+        width: 100%;
+        color: white;
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    @include media-down($bp3) { 
+        &__holder {
+            padding: 24px;
+        }
+        &__article {
+            max-width: 294px;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-bottom: 4px;
+            padding-bottom: 8px;
+        }
+        &__email-form {
+            gap: 16px;
+            flex-direction: column;
+        }
+        &__email-field {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 24px;
+            color: white;
+        }
+    }
+}

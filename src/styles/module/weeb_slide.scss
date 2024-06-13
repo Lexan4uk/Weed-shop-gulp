@@ -4,6 +4,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     
     &__img-block {
@@ -19,7 +20,7 @@
         display: none;
     }
     .material-invisible {
-        opacity: 0.1;
+        opacity: 0;
     }
     &__ounce-label {
         position: absolute;
@@ -55,7 +56,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         flex: 1;
         &_top {
             text-align: center;
@@ -64,6 +64,7 @@
             align-items: center;
             gap: 8px;
         }
+        height: 100%;
     }
     &__type {
         font-weight: 300;
@@ -98,6 +99,7 @@
     &__price-holder {
         display: flex;
         align-items: center;
+        margin-top: auto;
     }
     &__old-price {
         text-decoration: line-through;
@@ -108,6 +110,10 @@
     &__buttons {
         display: flex;
         gap: 8px;
+        margin-top: 20px;
+    }
+    .button-green {
+        margin-top: 20px;
     }
     @include media-down($bp3) {
 
