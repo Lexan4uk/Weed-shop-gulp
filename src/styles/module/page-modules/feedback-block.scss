@@ -1,0 +1,64 @@
+.feedback-block {
+    &_padding {
+        padding-bottom: 160px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-block {
+        margin-bottom: 64px;
+    }
+
+    &__bottom-block {
+        display: flex;
+    }
+
+    &__green-card-holder {
+        flex: 1;
+    }
+
+    &__feedback-slider {
+        flex: 2;
+        margin-left: 30px !important;
+
+        &_button {
+            height: 36px !important;
+            width: 36px !important;
+            box-shadow: 0px 6px 16px 0px #0000001F;
+            color: #54576D !important;
+            background: #fff;
+            border-radius: 100px;
+
+
+            &:after {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@include media-down($bp3) {
+
+    .feedback-block {
+        &_padding {
+            padding-bottom: 54px;
+        }
+
+        &__top-block {
+            margin-bottom: 32px;
+        }
+
+        &__bottom-block {
+            flex-direction: column;
+        }
+
+        &__feedback-slider {
+            flex: none;
+            margin-top: 32px;
+            margin-left: 0;
+        }
+    }
+}

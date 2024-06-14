@@ -1,0 +1,135 @@
+.help-block {
+    &_bg {
+        background: #01100B;
+    }
+
+    &_props {
+        position: relative;
+    }
+
+    &__content {
+        padding-top: 296px;
+        padding-bottom: 112px;
+        display: flex;
+        flex-direction: column;
+        gap: 73px;
+        align-items: center;
+    }
+
+    &__top-block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 968px;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__h2-props {
+        letter-spacing: -2px;
+    }
+
+    &__top-text-props {
+        max-width: 790px;
+    }
+
+    &__bottom-block {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__content-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    &__img-holder {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 34px;
+        position: relative;
+        width: 100%;
+    }
+
+    &__img-number {
+        color: #05422C;
+        font-weight: 500;
+        padding: 7.5px 14.5px;
+        border-radius: 100px;
+        background: #F2BC1B;
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    &__text {
+        max-width: 548px;
+    }
+
+    &__green-button-margin {
+        margin-top: 27px
+    }
+
+    &__green-button_second {
+        display: none;
+    }
+}
+
+@include media-down($bp3) {
+
+    .help-block {
+        &__content {
+            padding-top: 200px;
+            padding-bottom: 64px;
+            gap: 40px;
+        }
+
+        &__top-block {
+            gap: 16px;
+        }
+
+        &__top-text-props {
+            opacity: 0.42;
+        }
+
+        &__bottom-block {
+            gap: 24px;
+        }
+
+        &__content-block {
+            gap: 16px;
+        }
+
+        &__img-holder {
+            gap: 16px;
+        }
+
+        &__img {
+            height: 64px;
+            width: 64px;
+        }
+
+        &__img-number {
+            padding: 3px 10px;
+            left: 10%;
+        }
+
+        &__green-button-margin {
+            margin-top: 20px
+        }
+
+        &__green-button_first {
+            display: none;
+        }
+
+        &__green-button_second {
+            display: block;
+        }
+    }
+}

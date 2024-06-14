@@ -115,11 +115,4 @@
     .button-green {
         margin-top: 20px;
     }
-    @include media-down($bp3) {
-
-        &__text-block {
-            justify-content: center;
-            gap: 20px;
-        }
-    }
 }

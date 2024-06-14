@@ -1,6 +1,8 @@
 <footer class="footer footer_bg">
     <div class="footer__holder block-normalizer">
-        @@include('html/pieces/email-promo-block.html')
+        @@if (promo === true) {
+            @@include('html/pieces/email-promo-block.html')
+        }
         <div class="footer__content-holder">
             <div class="footer__top-block">
                 <div class="footer__left-block">

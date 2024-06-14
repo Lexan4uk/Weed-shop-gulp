@@ -44,6 +44,11 @@
         color: #05422C;
     }
 }
+.button-white-noborder {
+    background-color: #F3FBF4;
+    color: #17AF26;
+    border: none;
+}
 
 @include media-down($bp2) {
     .button {

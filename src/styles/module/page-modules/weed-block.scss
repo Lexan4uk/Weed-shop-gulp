@@ -1,0 +1,85 @@
+.weed-block {
+    &__top-block {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        width: 100%;
+    }
+
+    &__h2-props {
+        letter-spacing: -4px;
+    }
+
+    &__holder {
+        padding-bottom: 286px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__filter {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        overflow-x: hidden;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #F4F4F4;
+    }
+
+    &__filter-text {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__filter-holder {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    &__filter-buttons {
+        display: flex;
+        min-width: 711px;
+        gap: 24px;
+    }
+
+    &__bottom-block {
+        margin-top: 64px;
+    }
+
+    .weeb-slide_props {
+        min-height: 568px;
+    }
+}
+
+@include media-down($bp2) {
+
+    .weed-block {
+        .h5-text {
+            font-size: 16px;
+        }
+    }
+}
+
+@include media-down($bp3) {
+    .weed-block {
+        &__holder {
+            padding-bottom: 213px;
+        }
+
+        &__top-block {
+            gap: 24px;
+        }
+
+        &__filter {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__bottom-block {
+            margin-top: 40px;
+        }
+    }
+}

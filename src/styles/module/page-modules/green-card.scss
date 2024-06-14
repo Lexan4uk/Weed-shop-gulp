@@ -1,0 +1,126 @@
+.green-card {
+    border-radius: 16px;
+    background: #05422C;
+    position: relative;
+    overflow: hidden;
+
+    &_presentation {
+        padding: 84px 83px;
+    }
+
+    &_feedback {
+        padding: 40px;
+    }
+
+
+    &__bg-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+
+        &_presentation {
+            text-align: center;
+        }
+
+        &_feedback {
+            text-align: left;
+            gap: 32px;
+        }
+    }
+
+    &__image {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__h4-margin {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    &__h4-text {
+        font-size: 20px;
+    }
+
+    &__text {
+        max-width: 216px;
+        text-align: center;
+        color: #FFFFFF99;
+
+        &_margin {
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__link {
+        align-self: center;
+    }
+
+    &__h3-text {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    &__h3-border {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #346654;
+    }
+
+    &__rate-block {
+        &_text-weight {
+            font-weight: 300;
+        }
+
+        &_rates-holder {
+            display: flex;
+        }
+
+        &_text {
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        &_stars {
+            display: flex;
+            gap: 4px;
+            padding-right: 24px;
+            margin-right: 24px;
+            border-right: 1px solid #648A7C;
+        }
+    }
+}
+
+@include media-down($bp3) {
+
+    .green-card {
+        &_presentation {
+            flex: none;
+            padding-top: 28.5px;
+            padding-bottom: 28.5px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &_feedback {
+            padding: 24px;
+        }
+
+
+        &__image {
+            padding-left: 95.5px;
+            padding-right: 95.5px;
+        }
+    }
+}

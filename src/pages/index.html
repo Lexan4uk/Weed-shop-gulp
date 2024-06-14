@@ -3,7 +3,7 @@
 
 <head>
     @@include('html/base/meta.html',{
-    "title": "WEEEED"
+    "title": "Главная"
     })
     @@include('html/base/styles.html')
 </head>
@@ -173,7 +173,7 @@
                                 "name": "2 Oz Deal Ahi Tuna + Master Tuna",
                                 "rate": "4.6/5",
                                 "review": "135",
-                                "material": ".",
+                                "material": "",
                                 "material-visibility": "material-invisible",
                                 "price": "$200.00",
                                 "sale": true,
@@ -871,7 +871,9 @@
         </section>
     </main>
 
-    @@include('html/footer.html')
+    @@include('html/footer.html', {
+        "promo": true
+    })
     @@include('html/base/scripts.html')
 
 </html>

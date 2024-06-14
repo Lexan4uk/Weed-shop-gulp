@@ -82,7 +82,9 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-
+.swiper-slide {
+  height: auto !important;
+}
 
 @include media-down($bp1) {
 }

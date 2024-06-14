@@ -1,0 +1,56 @@
+.advantages-block {
+    &_bg {
+        background: #F2F6F4;
+    }
+
+    &_block-normalizer {
+        max-width: 1332px;
+    }
+
+    &__main {
+        padding-top: 80px;
+        padding-bottom: 104px;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__content-block {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__img {
+        padding: 22px;
+        border-radius: 100px;
+        background-color: #fff;
+    }
+
+    &__h3-margin {
+        margin-bottom: 16px;
+    }
+
+    &__h3-spacing {
+        letter-spacing: -0.5px;
+    }
+}
+
+@include media-down($bp2) {
+
+    .advantages-block {
+        &__main {
+            padding-top: 64px;
+            padding-bottom: 64px;
+            flex-direction: column;
+        }
+
+        &__img {
+            padding: 14px;
+            height: 100px;
+            width: 100px;
+        }
+
+        &__h3-margin {
+            margin-bottom: 12px;
+        }
+    }
+}

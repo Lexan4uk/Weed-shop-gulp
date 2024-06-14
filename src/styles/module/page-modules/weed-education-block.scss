@@ -1,0 +1,97 @@
+.weed-education {
+    &_bg {
+        background: #F4F4F4;
+    }
+
+    &__holder {
+        padding-top: 120px;
+        padding-bottom: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-block {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #C8C9CB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__h2-text {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: -1.5px;
+    }
+
+    &__bottom-block {
+        margin-top: 64px;
+        display: flex;
+        gap: 32px;
+        width: 100%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__image-block {
+        border-radius: 8px;
+        height: 240px;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    &__date-text {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    &__article {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 32px;
+    }
+}
+
+@include media-down($bp3) {
+
+    .weed-education {
+        &__holder {
+            padding-top: 64px;
+            padding-bottom: 270px;
+        }
+
+        &__top-block {
+            padding-bottom: 24px;
+        }
+
+        &__h2-text {
+            font-size: 24px;
+        }
+
+        &__bottom-block {
+            margin-top: 32px;
+            gap: 24px;
+            flex-direction: column;
+        }
+    }
+}
