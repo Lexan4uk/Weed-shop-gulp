@@ -72,3 +72,22 @@ const choose_slider = new Swiper('.choose-block__slider', {
         },
     }
 });
+const catalog_first_sloder = new Swiper('.catalog__first-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        500: {
+            slidesPerView: 2,
+        },
+        769: {
+            slidesPerView: 3,
+        }
+    },
+    /*navigation: {
+        prevEl: '.presentation-swiper-button-prev',
+        nextEl: '.presentation-swiper-button-next'
+    }*/
+});

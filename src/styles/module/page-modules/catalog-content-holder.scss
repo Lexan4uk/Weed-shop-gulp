@@ -1,0 +1,16 @@
+.catal-content-holder {
+    display: flex;
+    position: relative;
+    &_padding {
+        padding-top: 40px;
+        padding-bottom: 336px;
+    }
+}
+@include media-down($bp3) {
+    .catal-content-holder {
+        &_padding {
+            padding-top: 16px;
+            padding-bottom: 232px;
+        }
+    }
+}
