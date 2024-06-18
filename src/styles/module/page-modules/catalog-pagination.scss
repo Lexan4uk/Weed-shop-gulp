@@ -1,0 +1,70 @@
+.catalog-pagination {
+    &__pagination-holder {
+        margin-top: 32px;
+        padding-top: 32px;
+        border-top: 1px solid #F4F4F4;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__pages-holder {
+        display: flex;
+        gap: 12px
+    }
+    &__page-link {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 6px 16px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        &_active {
+            background: #F2F6F4;
+        }
+        &_arrow {
+            border: 1px solid #F4F4F4;
+            padding: 9px;
+        }
+    }
+    &__button-img {
+        height: 18px;
+        width: 18px;
+    }
+}
+@include media-down($bp3) { 
+    .catalog-pagination {
+        &__pagination-holder {
+            margin-top: 24px;
+            padding-top: 24px;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 20px
+        }
+        &__text {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        &__pages-holder {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 0px
+        }
+        &__page-link {
+            font-size: 12px;
+            padding: 3px 17px;
+            border-radius: 100px;
+            &_arrow {
+                border: 1px solid #F4F4F4;
+                padding: 9px;
+            }
+        }
+        &__button-img {
+            height: 16px;
+            width: 16px;
+        }
+    }
+}

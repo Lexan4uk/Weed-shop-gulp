@@ -286,121 +286,522 @@
                         </div>
                 </div>
             </aside>
-            <section class="catalog catalog_props">
-                <div class="catalog__header">
-                    <h1 class="catalog__h1">Shop</h1>
-                    <div class="catalog__head-buttons">
-                        <button class="catalog__head-button">
-                            <span class="catalog__head-button-text black-text">Short By Lates</span> 
-                            <img src="/images/catalog/arrow-down.svg" alt="Стрелка вниз" class="catalog__head-button-arrow">
-                        </button>
-                        <button class="catalog__head-button catalog__head-button_filter">
-                            <span class="catalog__head-button-text black-text">Filter</span> 
-                            <img src="/images/catalog/arrow-down.svg" alt="Стрелка вниз" class="catalog__head-button-arrow">
-                        </button>
+            <div class="catalog__main-content-holder">
+                <section class="catalog catalog-margin">
+                    <div class="catalog__header catalog-normalizer">
+                        <h1 class="catalog__h1">Shop</h1>
+                        <div class="catalog__head-buttons">
+                            <button class="catalog__head-button">
+                                <span class="catalog__head-button-text black-text">Short By Lates</span> 
+                                <img src="/images/catalog/arrow-down.svg" alt="Стрелка вниз" class="catalog__head-button-arrow">
+                            </button>
+                            <button class="catalog__head-button catalog__head-button_filter">
+                                <span class="catalog__head-button-text black-text">Filter</span> 
+                                <img src="/images/catalog/arrow-down.svg" alt="Стрелка вниз" class="catalog__head-button-arrow">
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="catalog__main">
-                    <div class="catalog__article-block">
-                        <h2 class="catalog__article green-text">Cannabis</h2>
-                        <p class="catalog__article-text gray-text">
-                            Here at WestCoastSupply’s “ cannabis section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at the best prices online. You can be assured that all our strains go through a strict screening process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced from reputable growers, based in British Columbia, Canada. We have hige grade selection comes from growers that produce AAAA+ quality cannabis flowers and have many years of experience in the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best prices online with our unbeatable sales!
-                        </p>
+                    <div class="catalog__main">
+                        <div class="catalog__article-block catalog-normalizer">
+                            <h2 class="catalog__article green-text">Cannabis</h2>
+                            <p class="catalog__article-text gray-text">
+                                Here at WestCoastSupply’s “ cannabis section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at the best prices online. You can be assured that all our strains go through a strict screening process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced from reputable growers, based in British Columbia, Canada. We have hige grade selection comes from growers that produce AAAA+ quality cannabis flowers and have many years of experience in the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best prices online with our unbeatable sales!
+                            </p>
+                        </div>
+                        <div class="catalog__swiper-holder">
+                            <h2 class="catalog__swiper-article black-text">Top Selling</h2>
+                            <div class="catalog__swiper catalog__first-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include('html/pieces/weeb_slide.html', {
+                                            "image": "/images/main/weed/weed-type-2.png",
+                                            "ounce-visibility": "invisible",
+                                            "ounce-text": "",
+                                            "sold-out-visibility": "invisible",
+                                            "type": "FLOWER",
+                                            "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                            "rate": "4.6/5",
+                                            "review": "135",
+                                            "material": "Sativa 100%",
+                                            "material-visibility": "material-visible",
+                                            "price": "$200.00",
+                                            "sale": false,
+                                            "newprice": ""
+                                        })
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('html/pieces/weeb_slide.html', {
+                                            "image": "/images/main/weed/weed-type-1.png",
+                                            "ounce-visibility": "invisible",
+                                            "ounce-text": "",
+                                            "sold-out-visibility": "visible",
+                                            "type": "CONCENTRATES",
+                                            "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                            "rate": "4.6/5",
+                                            "review": "135",
+                                            "material": "Indica 70%",
+                                            "material-visibility": "material-visible",
+                                            "price": "$200.00",
+                                            "sale": true,
+                                            "newprice": "$102.00"
+                                        })
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('html/pieces/weeb_slide.html', {
+                                            "image": "/images/main/weed/weed-type-2.png",
+                                            "ounce-visibility": "visible",
+                                            "ounce-text": "$60 ounce",
+                                            "sold-out-visibility": "invisible",
+                                            "type": "FLOWER",
+                                            "name": "2 Oz Deal Ahi Tuna + Master Tuna",
+                                            "rate": "4.6/5",
+                                            "review": "135",
+                                            "material": "",
+                                            "material-visibility": "material-invisible",
+                                            "price": "$200.00",
+                                            "sale": true,
+                                            "newprice": "$102.00"
+                                        })
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('html/pieces/weeb_slide.html', {
+                                            "image": "/images/main/weed/weed-type-2.png",
+                                            "ounce-visibility": "invisible",
+                                            "ounce-text": "",
+                                            "sold-out-visibility": "invisible",
+                                            "type": "FLOWER",
+                                            "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                            "rate": "4.6/5",
+                                            "review": "135",
+                                            "material": "Sativa 100%",
+                                            "material-visibility": "material-visible",
+                                            "price": "$200.00",
+                                            "sale": false,
+                                            "newprice": ""
+                                        })
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @@include('html/pieces/weeb_slide.html', {
+                                            "image": "/images/main/weed/weed-type-2.png",
+                                            "ounce-visibility": "invisible",
+                                            "ounce-text": "",
+                                            "sold-out-visibility": "invisible",
+                                            "type": "FLOWER",
+                                            "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                            "rate": "4.6/5",
+                                            "review": "135",
+                                            "material": "Sativa 100%",
+                                            "material-visibility": "material-visible",
+                                            "price": "$200.00",
+                                            "sale": false,
+                                            "newprice": ""
+                                        })
+                                    </div>
+                                </div>
+                                <div class="catalog__first-swiper_button catalog-swiper-button-prev swiper-button-prev"></div>
+                                <div class="catalog__first-swiper_button catalog-swiper-button-next swiper-button-next"></div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="catalog__swiper-holder">
-                        <div class="catalog__swiper catalog__first-swiper swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    @@include('html/pieces/weeb_slide.html', {
-                                        "image": "/images/main/weed/weed-type-2.png",
-                                        "ounce-visibility": "invisible",
-                                        "ounce-text": "",
-                                        "sold-out-visibility": "invisible",
-                                        "type": "FLOWER",
-                                        "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
-                                        "rate": "4.6/5",
-                                        "review": "135",
-                                        "material": "Sativa 100%",
-                                        "material-visibility": "material-visible",
-                                        "price": "$200.00",
-                                        "sale": false,
-                                        "newprice": ""
-                                    })
-                                </div>
-                                <div class="swiper-slide">
-                                    @@include('html/pieces/weeb_slide.html', {
-                                        "image": "/images/main/weed/weed-type-1.png",
-                                        "ounce-visibility": "invisible",
-                                        "ounce-text": "",
-                                        "sold-out-visibility": "visible",
-                                        "type": "CONCENTRATES",
-                                        "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
-                                        "rate": "4.6/5",
-                                        "review": "135",
-                                        "material": "Indica 70%",
-                                        "material-visibility": "material-visible",
-                                        "price": "$200.00",
-                                        "sale": true,
-                                        "newprice": "$102.00"
-                                    })
-                                </div>
-                                <div class="swiper-slide">
-                                    @@include('html/pieces/weeb_slide.html', {
-                                        "image": "/images/main/weed/weed-type-2.png",
-                                        "ounce-visibility": "visible",
-                                        "ounce-text": "$60 ounce",
-                                        "sold-out-visibility": "invisible",
-                                        "type": "FLOWER",
-                                        "name": "2 Oz Deal Ahi Tuna + Master Tuna",
-                                        "rate": "4.6/5",
-                                        "review": "135",
-                                        "material": "",
-                                        "material-visibility": "material-invisible",
-                                        "price": "$200.00",
-                                        "sale": true,
-                                        "newprice": "$102.00"
-                                    })
-                                </div>
-                                <div class="swiper-slide">
-                                    @@include('html/pieces/weeb_slide.html', {
-                                        "image": "/images/main/weed/weed-type-2.png",
-                                        "ounce-visibility": "invisible",
-                                        "ounce-text": "",
-                                        "sold-out-visibility": "invisible",
-                                        "type": "FLOWER",
-                                        "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
-                                        "rate": "4.6/5",
-                                        "review": "135",
-                                        "material": "Sativa 100%",
-                                        "material-visibility": "material-visible",
-                                        "price": "$200.00",
-                                        "sale": false,
-                                        "newprice": ""
-                                    })
-                                </div>
-                                <div class="swiper-slide">
-                                    @@include('html/pieces/weeb_slide.html', {
-                                        "image": "/images/main/weed/weed-type-2.png",
-                                        "ounce-visibility": "invisible",
-                                        "ounce-text": "",
-                                        "sold-out-visibility": "invisible",
-                                        "type": "FLOWER",
-                                        "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
-                                        "rate": "4.6/5",
-                                        "review": "135",
-                                        "material": "Sativa 100%",
-                                        "material-visibility": "material-visible",
-                                        "price": "$200.00",
-                                        "sale": false,
-                                        "newprice": ""
-                                    })
-                                </div>
+                </section>
+                <section class="weed-catalog catalog-margin catalog-normalizer">
+                    <div class="weed-catalog__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-1.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-3.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-left.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master <br>Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-center.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-4.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-            </section>
+                </section>
+                <section class="big-weed-block big-weed-block_props catalog-margin catalog-normalizer">
+                    <div class="big-weed-block__content-holder">
+                        <div class="big-weed-block__infoblock">
+                            <div class="big-weed-block__text-holder">
+                                <span class="big-weed-block__type">CONCENTRATES</span>
+                                <h3 class="big-weed-block__name white-text">Mix And Match Shatter/ Budder 28g (4 X 7G)</h3>
+                                <div class="big-weed-block__rate-block">
+                                    <div class="big-weed-block__rate-block_star-rate big-weed-block__rate-block_element ">
+                                        <img src="/images/main/star.svg" alt="Зартинка звезды">
+                                        <span class="white-text">&nbsp;4.6/5</span>
+                                    </div>
+                                    <div class="big-weed-block__rate-block_review big-weed-block__rate-block_element">
+                                        <span class="big-weed-block__rate-block_review-count white-text">135</span>
+                                        <span class="big-weed-block__rate-block_text-review light-gray-text">&nbsp;Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="big-weed-block__buttons big-weed-block__text-margin">
+                                    @@include('html/pieces/customised_button.html', {
+                                        "type": "button",
+                                        "template": "button-white",
+                                        "font": "button__text-12px white-text",
+                                        "padding": "7px 10px",
+                                        "additional": "border-radius: 0px;  background: #FFFFFF14; border: 1px solid #FFFFFF33;",
+                                        "path": "",
+                                        "text": "28g"
+                                    })
+                                    @@include('html/pieces/customised_button.html', {
+                                        "type": "button",
+                                        "template": "button-white",
+                                        "font": "button__text-12px white-text",
+                                        "padding": "7px 10px",
+                                        "additional": "border-radius: 0px;  background: #FFFFFF14; border: 1px solid #FFFFFF33;",
+                                        "path": "",
+                                        "text": "1/2lb"
+                                    })
+                                    @@include('html/pieces/customised_button.html', {
+                                        "type": "button",
+                                        "template": "button-white",
+                                        "font": "button__text-12px white-text",
+                                        "padding": "7px 10px",
+                                        "additional": "border-radius: 0px; background: #FFFFFF14; border: 1px solid #FFFFFF33;",
+                                        "path": "",
+                                        "text": "1/4lb"
+                                    })
+                                </div>
+                                <div class="big-weed-block__bottom-block big-weed-block__text-margin">
+                                    @@include('html/pieces/customised_button.html', {
+                                        "type": "button",
+                                        "template": "button-green",
+                                        "font": "button__text-16px",
+                                        "padding": "16px 40px",
+                                        "additional": "",
+                                        "path": "",
+                                        "text": "Add to Cart"
+                                    })
+                                    <div class="big-weed-block__price-holder">
+                                        <span class="big-weed-block__new-price yellow-text">$102.00</span>
+                                        <span class="big-weed-block__price big-weed-block__na-price">$200.00</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="big-weed-block__image-block">
+                            <div class="big-weed-block__slider-container">
+                                <div class="big-weed-block__image-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="big-weed-block__swiper-img-holder">
+                                                <img src="/images/catalog/gummies.png" alt="Картинка свайпера марихуаны">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="big-weed-block__swiper-img-holder">
+                                                <img src="/images/catalog/gummies.png" alt="Картинка свайпера марихуаны">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="big-weed-block__swiper-img-holder">
+                                                <img src="/images/catalog/gummies.png" alt="Картинка свайпера марихуаны">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="big-weed-block__swiper-img-holder">
+                                                <img src="/images/catalog/gummies.png" alt="Картинка свайпера марихуаны">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="big-weed-block__image-slider_button big-weed-block__image-slider_button_prev big-weed-block-swiper-button-prev swiper-button-prev"></div>
+                                <div class="big-weed-block__image-slider_button big-weed-block__image-slider_button_next big-weed-block-swiper-button-next swiper-button-next"></div>
+                                <div class="big-weed-block__pagination"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section class="weed-catalog catalog-margin catalog-normalizer">
+                    <div class="weed-catalog__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-1.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-2.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-3.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-left.png",
+                                    "ounce-visibility": "visible",
+                                    "ounce-text": "$60 ounce",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Ahi Tuna + Master <br>Tuna",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": ".",
+                                    "material-visibility": "material-invisible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-center.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "visible",
+                                    "type": "CONCENTRATES",
+                                    "name": "Mix And Match Shatter/Budder 28g (4 X 7G)",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Indica 70%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": true,
+                                    "newprice": "$102.00"
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('html/pieces/weeb_slide.html', {
+                                    "image": "/images/main/weed/weed-type-4.png",
+                                    "ounce-visibility": "invisible",
+                                    "ounce-text": "",
+                                    "sold-out-visibility": "invisible",
+                                    "type": "FLOWER",
+                                    "name": "2 Oz Deal Watermelon Zkittles + Purple Gushers",
+                                    "rate": "4.6/5",
+                                    "review": "135",
+                                    "material": "Sativa 100%",
+                                    "material-visibility": "material-visible",
+                                    "price": "$200.00",
+                                    "sale": false,
+                                    "newprice": ""
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="catalog-pagination catalog-normalizer">
+                    <div class="catalog-pagination__pagination-holder">
+                        <span class="catalog-pagination__text gray-text">Showing 1-30 of 393 results</span>
+                        <div class="catalog-pagination__pages-holder">
+                            <a href="/" class="catalog-pagination__page-link catalog-pagination__page-link_arrow dark-green-text"><img class="catalog-pagination__button-img" src="/images/catalog/arrow-left.svg" alt="Стрелка назад"></a>
+                            <a href="/" class="catalog-pagination__page-link catalog-pagination__page-link_active dark-green-text">1</a>
+                            <a href="/" class="catalog-pagination__page-link dark-green-text">2</a>
+                            <a href="/" class="catalog-pagination__page-link dark-green-text">3</a>
+                            <a href="/" class="catalog-pagination__page-link dark-green-text">4</a>
+                            <a href="/" class="catalog-pagination__page-link dark-green-text">...</a>
+                            <a href="/" class="catalog-pagination__page-link dark-green-text">55</a>
+                            <a href="/" class="catalog-pagination__page-link catalog-pagination__page-link_arrow dark-green-text"><img class="catalog-pagination__button-img" src="/images/catalog/arrow-right.svg" alt="Стрелка вперед"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     @@include('html/footer.html', {

@@ -88,8 +88,12 @@ body {
 .swiper-slide {
   height: auto !important;
 }
+.catalog-margin {
+  margin-left: 32px;
+}
 
 @include media-down($bp1) {
+  
 }
 @include media-down($bp2) {
 
@@ -116,7 +120,15 @@ body {
   }
 }
 @include media-down($bp3) {
+  .catalog-margin {
+    margin-left: 0px;
+  }
   .block-normalizer {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .catalog-normalizer {
     max-width: 1240px;
     padding-left: 20px;
     padding-right: 20px;

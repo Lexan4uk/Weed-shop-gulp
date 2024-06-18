@@ -1,10 +1,4 @@
 .catalog {
-    &_props {
-        margin-left: 32px;
-        
-
-    }
-
     &__header {
         display: flex;
         justify-content: space-between;
@@ -49,17 +43,45 @@
         position: relative;
         overflow: hidden;
     }
+    &__swiper-holder {
+        background: #F2F6F4;
+        border-radius: 16px;
+        padding: 24px 32px;
+    }
+    &__swiper-article {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        margin-bottom: 24px;
+    }
     &__first-swiper {
+        &_button {
+            height: 36px !important;
+            width: 36px !important;
+            box-shadow: 0px 6px 16px 0px #0000001F;
+            color: #54576D !important;
+            background: #fff;
+            border-radius: 100px;
+            transform: translateY(-50%);
+
+            &:after {
+                font-size: 14px !important;
+            }
+        }
+        .weeb-slide {
+            &__img-block {
+                background: #ffffff;
+            }
+            &__material-block {
+                background: #ffffff;
+            }
+        }
         
     }
 }
 
 @include media-down($bp3) {
     .catalog {
-        &_props {
-            margin-left: 0px;
-        }
-
         &__header {
             padding-bottom: 16px;
         }
@@ -75,5 +97,21 @@
                 display: block;
             }
         }
+        &__main {
+            padding-top: 24px;
+        }
+        &__article-text {
+            margin-bottom: 24px;
+        }
+
+        &__swiper-holder {
+            padding: 24px 24px;
+            border-radius: 0px;
+        }
+        &__swiper-article {
+            font-size: 18px;
+            letter-spacing: 0px;
+        }
+
     }
 }
