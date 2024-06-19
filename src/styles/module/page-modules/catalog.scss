@@ -71,6 +71,8 @@
         .weeb-slide {
             &__img-block {
                 background: #ffffff;
+                background-image: radial-gradient(circle at center bottom, #00000010 0%, #00000010 20%, #00000000 60%, #00000000 100%);
+
             }
             &__material-block {
                 background: #ffffff;
