@@ -1,0 +1,11 @@
+.featured-product {
+ &__content-holder {
+    padding-top: 80px;
+    padding-bottom: 336px;
+    display: flex;
+    flex-direction: column;
+ }
+ &__article {
+    margin-bottom: 40px;
+ }
+}

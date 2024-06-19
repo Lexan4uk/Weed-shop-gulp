@@ -39,7 +39,7 @@
         margin-top: 16px;
         margin-bottom: 32px;
     }
-    &__swiper {
+    &__slider {
         position: relative;
         overflow: hidden;
     }
@@ -71,7 +71,7 @@
         .weeb-slide {
             &__img-block {
                 background: #ffffff;
-                background-image: radial-gradient(circle at center bottom, #00000010 0%, #00000010 20%, #00000000 60%, #00000000 100%);
+                background-image: radial-gradient(circle at center bottom, #00000005 0%, #00000005 50%, #00000000 51%, #00000000 60%, #00000000 100%);
 
             }
             &__material-block {

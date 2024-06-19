@@ -122,3 +122,32 @@ const big_weed_slider = new Swiper('.big-weed-block__image-slider', {
         clickable: true,
     },
 });
+const product_card_swiper = new Swiper('.product__weed-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    thumbs: {
+      swiper: {
+        spaceBetween: 14,
+        el: ".product__thumbnail-swiper",
+        slidesPerView: 4,
+        loop: true,
+      }
+    }
+  });
+  const featured_slider = new Swiper('.featured-product__swiper', {
+    breakpoints: {
+        0: {
+            spaceBetween: 24,
+            slidesPerView: 2,
+            grid: {
+                fill: "row",
+                rows: 2,
+            },
+        },
+        950: {
+            spaceBetween: 32,
+            slidesPerView: 4,
+
+        },
+    }
+});

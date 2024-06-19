@@ -84,6 +84,11 @@
       padding: 5px 10px;
       border-radius: 100px;
       min-width: 35px;
+      width: 75px;
+      border: none;
+      &:focus {
+         outline: none;
+      }
    }
 
    &__price-slider-container {
