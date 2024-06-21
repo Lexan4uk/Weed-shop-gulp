@@ -120,23 +120,164 @@
                         <div class="product__effect">
                             <img class="product__effect-img" src="/images/product/colorfilter.svg" alt="Каринка эффектов">
                             <div class="product__effect-textblock">
-                                <span class="product__effect-article light-gray-text">EFFECTS</span>
-                                <span class="product__effect-text black-text">Calming, Creative, Happy, Relaxing, Sleepy, Uplifting</span>
+                                <h3 class="product__mini-article light-gray-text">EFFECTS</h3>
+                                <p class="product__effect-text black-text">Calming, Creative, Happy, Relaxing, Sleepy, Uplifting</p>
                             </div>
                         </div>
                         <div class="product__effect">
                             <img class="product__effect-img" src="/images/product/head.svg" alt="Каринка эффектов">
                             <div class="product__effect-textblock">
-                                <span class="product__effect-article light-gray-text">MAY RELIEVE</span>
-                                <span class="product__effect-text black-text">Anxiety, Arthritis, Chronic Pain, Depression, Fatigue, Inflammation, Insomnia, Irregular Bowel Movements, Migraines, Mood Swings</span>
+                                <h3 class="product__mini-article light-gray-text">MAY RELIEVE</h3>
+                                <p class="product__effect-text black-text">Anxiety, Arthritis, Chronic Pain, Depression, Fatigue, Inflammation, Insomnia, Irregular Bowel Movements, Migraines, Mood Swings</p>
                             </div>
                         </div>
                         <div class="product__effect">
                             <img class="product__effect-img" src="/images/product/smoke.svg" alt="Каринка эффектов">
                             <div class="product__effect-textblock">
-                                <span class="product__effect-article light-gray-text">AROMAS</span>
-                                <span class="product__effect-text black-text">Chemical, Citrus, Earthy, Pungent, Sour</span>
+                                <h3 class="product__mini-article light-gray-text">AROMAS</h3>
+                                <p class="product__effect-text black-text">Chemical, Citrus, Earthy, Pungent, Sour</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="product__desc-block">
+                        <h3 class="product__mini-article light-gray-text">DESCRIPTION</h3>
+                        <p class="product__desc-text product__margin">Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.</p>
+                    </div>
+                    <div class="product__select-block">
+                        <div class="product__select-left">
+                            <h3 class="product__mini-article light-gray-text">WEIGHT</h3>
+                            <div class="product__select-buttons product__margin">
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-12px black-text",
+                                    "padding": "9px 14px",
+                                    "additional": "border-radius: 0px;  background: #F3FBF4;",
+                                    "path": "",
+                                    "text": "28g"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-12px black-text",
+                                    "padding": "9px 14px",
+                                    "additional": "border-radius: 0px; background: #F3FBF4;",
+                                    "path": "",
+                                    "text": "1/2lb"
+                                })
+                                @@include('html/pieces/customised_button.html', {
+                                    "type": "button",
+                                    "template": "button-white",
+                                    "font": "button__text-12px black-text",
+                                    "padding": "9px 14px",
+                                    "additional": "border-radius: 0px; background: #F3FBF4;",
+                                    "path": "",
+                                    "text": "1/4lb"
+                                })
+                            </div>
+                        </div>
+                        <div class="product__select-right">
+                            <h3 class="product__mini-article light-gray-text">ADD INTEGRA PACK</h3>
+                            <div class="product__select-checks product__margin">
+                                <div class="product__select-check">
+                                    <input class="product__checkbox" type="checkbox"/>
+                                    <span class="product__checkbox-text black-text">4g (+$2.00)</span>
+                                </div>
+                                <div class="product__select-check">
+                                    <input class="product__checkbox" type="checkbox"/>
+                                    <span class="product__checkbox-text black-text">8g (+$3.00)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product__select-promo">Purchase this product now and earn<span class="red-text">&nbsp;80&nbsp;</span>Points!</p>
+                    </div>
+                    <div class="product__cart-block">
+                        <div class="product__cart-top">
+                            <div class="product__cart-price-block">
+                                <span class="product__cart-price-text">Khalifa Kush (AAAA) <span class="light-gray-text">&nbsp;2x</span></span>
+                                <span class="product__cart-price-count black-text">$120.00</span>
+                            </div>
+                            <div class="product__cart-price-block product__margin">
+                                <span class="product__cart-price-text">Add Integra Pack - 4g</span>
+                                <span class="product__cart-price-count black-text">$2.00</span>
+                            </div>
+
+                        </div>
+                        <div class="product__cart-middle">
+                            <div class="product__cart-counter-block">
+                                <button class="product__cart-counter-button decrement simple-button">&minus;</button>
+                                <input class="product__cart-counter-text counter" type="number" value="1">
+                                <button class="product__cart-counter-button increment simple-button">&plus;</button>
+                                <a href="/" class="product__cart-counter-link green-link">In Stock</a>
+                            </div>
+                            @@include('html/pieces/customised_button.html', {
+                                "type": "button",
+                                "template": "button-green",
+                                "font": "button__text-16px",
+                                "padding": "16px 32px",
+                                "additional": "",
+                                "path": "",
+                                "text": "Add to Cart | $242.00"
+                            })
+                        </div>
+                        <div class="product__cart-bottom">
+                            <div class="product__cart-advantage">
+                                <img class="product__cart-advantage-check" src="/images/product/green-check.svg" alt="Знак галочки">
+                                <span class="product__cart-advantage-text">Free Xpress Shipping on orders over <span class="yellow-text">$149</span></span>
+                            </div>
+                            <div class="product__cart-advantage product__margin">
+                                <img class="product__cart-advantage-check" src="/images/product/green-check.svg" alt="Знак галочки">
+                                <span class="product__cart-advantage-text">Order before 12:00pm for same day dispatch</span>
+                            </div>
+                            <div class="product__cart-advantage product__margin">
+                                <img class="product__cart-advantage-check" src="/images/product/green-check.svg" alt="Знак галочки">
+                                <span class="product__cart-advantage-text">Support & ordering open 7 day a week</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__information-block">
+                        <div class="product__information-top">
+                            <div class="product__information-top-piece product__information-top-piece_left">
+                                <span class="product__information-top-name gray-text">SKU</span>
+                                <span class="product__information-top-text black-text">:&nbsp;&nbsp;N/A</span>
+                            </div>
+                            <div class="product__information-top-piece product__information-top-piece_right">
+                                <span class="product__information-top-name gray-text">Categories</span>
+                                <span class="product__information-top-text black-text">:<span class="green-text">&nbsp;&nbsp;AAAA Weed</span>&nbsp;,&nbsp;<span class="green-text">Indica</span></span>
+                            </div>
+                        </div>
+                        <div class="product__information-buttons">
+                            @@include('html/pieces/customised_button.html', {
+                                "type": "button",
+                                "template": "button-white",
+                                "font": "button__text-16px",
+                                "padding": "12px 0px",
+                                "additional": "width: 30%;",
+                                "path": "/",
+                                "text": "Description"
+                            })
+                            @@include('html/pieces/customised_button.html', {
+                                "type": "button",
+                                "template": "button-white",
+                                "font": "button__text-16px",
+                                "padding": "12px 0px",
+                                "additional": "width: 30%;",
+                                "path": "/",
+                                "text": "Reviews (350)"
+                            })
+                            @@include('html/pieces/customised_button.html', {
+                                "type": "button",
+                                "template": "button-white",
+                                "font": "button__text-16px",
+                                "padding": "12px 0px",
+                                "additional": "width: 30%;",
+                                "path": "/",
+                                "text": "Refer a Friend"
+                            })
+                        </div>
+                        <div class="product__information-bottom">
+                            <p class="product__information-description">Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains. Named for its gorgeous appearance and breeder, Jungle Diamonds is a favorite of indica and hybrid lovers alike thanks to its delicious taste and tingly, arousing high. Jungle Diamonds buds have sparkling oversized spade-shaped olive green nugs with vivid amber hairs and a thick frosty blanket of glittering tiny blue-tinted white crystal trichomes. As you pull apart each sticky little nugget, aromas of spicy mocha coffee and fruity herbs are released.<br><br></p>
+                            <p class="product__information-description">The flavor is of sweet chocolate with hints of fresh ripe berries to it, too. The Jungle Diamonds high is just as delicious, with happy effects that will boost the spirits and kick negative thoughts and moods to the curb. You’ll feel a tingly sense in your body from start to finish that serves to remove any aches or pains while leaving you pretty aroused at times. This is accompanied by a blissfully unfocused heady lift that leaves your head in the clouds without causing sedation. With these effects and its pretty high 17-24% THC level, Jungle Diamonds is ideal for experienced patients with chronic pain, cramps or muscle spasms and appetite loss or nausea.</p>
                         </div>
                     </div>
                 </div>

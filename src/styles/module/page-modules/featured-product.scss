@@ -9,3 +9,14 @@
     margin-bottom: 40px;
  }
 }
+@include media-down($bp3) {
+   .featured-product {
+      &__content-holder {
+         padding-top: 32px;
+         padding-bottom: 232px;
+      }
+      &__article {
+         margin-bottom: 24px;
+      }
+   }
+}

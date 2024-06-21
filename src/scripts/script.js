@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
     // modules
     @@include('module/supportWebp.js')
     @@include('module/sliders.js')
+    @@include('module/product-cart-buttons.js')
     @@include('module/polzunok.js')
     @@include('module/catalog-remove-normalizer.js')
+    
 })

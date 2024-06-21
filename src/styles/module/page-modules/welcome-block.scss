@@ -94,11 +94,13 @@
 
     &__right-cube {
         z-index: 1;
+
+        &_img {
+            transform: translate(65%, -25%);
+        }
     }
 
-    &_img {
-        transform: translate(65%, -25%);
-    }
+
 }
 
 @include media-down($bp1) {
