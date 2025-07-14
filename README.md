@@ -1,77 +1,52 @@
-## Обзор
-Основные функции:
-* Перенос файлов из `src` в `prod` директорию и сборка проекта
-* Работа`.html`, `.css`, и `.sass` файлами без необходимости вносить какие-то модификации в сборку.
-* Возможность импорта внутри JS, HTML и CSS файлов
-* Компиляция `.sass` файлов в `.css`
-* Реализованы sourcemaps для удобства отслеживания изменений при использовании DevTools в браузере
-* Автоматизирована работа с картинками и шрифтами
-* Использование автопрефиксера и минификатор для css
-* Минификация и автоматическое преобразование JS для корректной работы в старых браузерах
+# Магазин марихуаны
 
-## Начало работы
-1. Скачайте и установите Node.js [отсюда](https://volta.sh/).
-2. Установите Gulp `npm install --global gulp`
-3. В командной строке вашего редактора введите команду `npm install`, она установит нужные зависимости.
+## Навигация  
+- [Общая информация](#общая-информация)  
+- [Скриншоты без адаптива](#без-адаптива)  
+- [Скриншоты с адаптивом](#с-адаптивом)
 
-## Структура проекта
-```
-|- .gitignore
-|- gulpfile.js
-|- package.json
-|- package-lock.json
-|- node_modules (создается автоматически после выполнения npm install)
-|- src
-|   |- fonts
-|   |- images
-|   |- html
-|       |- ваши элементы страницы
-|   |- pages
-|       |- ваши страницы
-|       |- index.html
-|   |- scripts
-|   |   |- script.js
-|   |- styles
-        |- module - автоимпортируемые блоки стилей
-|       |- styles.css
-```
+## Общая информация
 
-## Запуск gulp, режимы запуска
-* **Режим разработчика** `gulp` - запускает сервер с live edit, собирает и перебрасывает файлы в папку `prod`.
-* **Режим сборки** `gulp build` - запускает сервер без live edit, собирает и перебрасывает файлы в папку `prod`, компилирует sass, прогоняет JS через babel, sourcemaps отключены, сжимает картинки, преобразует шрифты во все актуальные форматы, минифицирует JS, CSS, HTML.
+Делал на производственной практике от колледжа в студии веб-разработки.  
+Чистая верстка с применением таск-менеджера Gulp (в основном использовался для шаблонов компонентов).  
+Функционала как такового нет, просто перенос шаблона Figma в качестве обучения.  
+Из интересного - адаптив и применение Swagger, анимации при наведении, анимации прокрутки.
 
-## File-include
-File include позволяет включать одни HTML или JS файлы внутрь других, это помогает разбить код на модули для его переиспользования.
+## Скриншоты
 
-Как это использовать?
-* Допустим, у нас есть header, который используется на нескольких страницах сайта. Мы можем написать разметку хедера в `src/html/header.html`, а затем импортировать его в наш `{name}.html` следующим образом: `@@include('html/header.html')`
-* Аналогично мы собираем наши скрипты в один файл `scripts/script.js` и уже его подключаем к нашей странице.
-Подробнее об этом можно почитать [здесь](https://www.npmjs.com/package/gulp-file-include).
+<h3 id="без-адаптива">Без адаптива</h3>
+
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed1.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed2.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed3.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed4.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed5.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed6.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed7.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed8.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed9.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed10.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed11.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed12.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed13.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed14.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed15.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed16.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed17.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed18.png?raw=true" width="1000" />
 
 
-## HTML
+<h3 id="с-адаптивом">С адаптивом</h3>
 
-К нашей странице мы всегда подключаем единый файл стилей `styles/styles.css`, в этот файл мы импортируем все остальные стили (normalize.css, default.css, fonts.css и т.д.). Аналогично подключаем единый файл скриптов `scripts/script.js`.
-
-## CSS
-
-Импорт CSS в общий файл стилей осуществляем с помощью следующего синтаксиса: `@import 'normalize';`. Обратите внимание, нам не нужно указывать расширение импортируемого CSS файла, также важно чтобы все импорты были в самом начале нашего файла стилей.
-Стили по пути `src/styles/module/**` будит подключены автоматически
-
-## JS
-
-Пользовательские скрипты размещаем в `scripts/module`, затем подключаем их в `scripts/script.js` через File-include `@@include('module/supportWebp.js')`.
-Файлы библиотек размещают по пути `scripts/module`, затем подключаем их в `scripts/script.js` через File-include `@@include('module/supportWebp.js')`.
-
-
-## Картинки
-
-Не все браузеры поддерживают формат изображений `.webp`, поэтому чтобы проверить может ли браузер, в котором крутится наш сайт, в `.webp` мы используем специальный сниппет `scripts/module/supportWebp.js`. Если вкртаце, то он с помощью JS создает webp картинку и проверяет может ли прогрузить ее браузер. Если может, то этот скрипт добавляет `<body>` класс `webp`, если нет, то `no-webp`. Это нужно для корректной работы webp картинок, которые мы используем в нашем CSS по url'у, например через `background`.
-
-Обратите внимание, что при вставке нашей картинки через `background` [все свойства фона](https://doka.guide/css/background/) должны задаваться именно в нем.
-
-При работе с тэгом `<img>` не забывайте указывать атрибут `alt`, который будет отображаться если картинка по каким-то причинам не прогрузилась или если сайт читается скринридером. Рекомендую в конце вашего `alt` ставить точку, это позволит скринридерам сделать паузу после прочтения картинки. Об этой фишке узнал из [доклада Никиты Дубко про img](https://www.youtube.com/watch?v=WfzKd16LplI&list=PLca5mz32m-vhjpGRSpznPrO5VZOKrRfIZ&index=1&t=987s).
-
-## Шрифты
-
-Как работать со шрифтами и как их правильно подгружать на страницу можно почитать в [этом гайде](https://web.dev/font-best-practices/) от Google.
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed19.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed20.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed21.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed22.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed23.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed24.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed25.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed26.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed27.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed28.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed29.png?raw=true" width="1000" />
+<img src="https://github.com/Lexan4uk/imgs/blob/main/weed/weed30.png?raw=true" width="1000" />
